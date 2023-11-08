@@ -207,7 +207,7 @@
             margin: auto;
         }
 
-       /* .svdTemp {
+        .svdTemp {
             width: 270px;
             height: 135px;
             box-shadow: 0 -1px 8px 2px rgba(0, 0, 0, 0.14);
@@ -220,7 +220,7 @@
 
         .svdTemp:last-of-type {
             margin-bottom: 60px;
-        }*/
+        }
 
         .smTemp {
             width: 270px;
@@ -460,30 +460,30 @@
                 padding-bottom: 50px;
             }
 
-            /*.svdTemp:first-of-type {*/
-            /*    margin-top: 30px;*/
-            /*    margin-bottom: 0;*/
-            /*}*/
+            .svdTemp:first-of-type {
+                margin-top: 30px;
+                margin-bottom: 0;
+            }
 
-            /*.svdTemp:last-of-type {*/
-            /*    margin-bottom: 0px;*/
-            /*}*/
+            .svdTemp:last-of-type {
+                margin-bottom: 0px;
+            }
 
-            /*.smTemp:first-of-type {*/
-            /*    margin-top: 30px;*/
-            /*    margin-bottom: 0;*/
-            /*}*/
+            .smTemp:first-of-type {
+                margin-top: 30px;
+                margin-bottom: 0;
+            }
 
-            /*.smTemp:last-of-type {*/
-            /*    margin-bottom: 0px;*/
-            /*}*/
+            .smTemp:last-of-type {
+                margin-bottom: 0px;
+            }
 
-            /*.svdTemp {*/
-            /*    width: 280px;*/
-            /*    height: 140px;*/
-            /*    margin-top: 30px;*/
-            /*    margin-bottom: 0;*/
-            /*}*/
+            .svdTemp {
+                width: 280px;
+                height: 140px;
+                margin-top: 30px;
+                margin-bottom: 0;
+            }
 
             .smTemp {
                 width: 280px;
@@ -768,12 +768,12 @@
                 width: 300px;
             }
 
-            /*.svdTemp {*/
-            /*    width: 250px;*/
-            /*    height: 125px;*/
-            /*    margin-top: 30px;*/
-            /*    margin-bottom: 0;*/
-            /*}*/
+            .svdTemp {
+                width: 250px;
+                height: 125px;
+                margin-top: 30px;
+                margin-bottom: 0;
+            }
 
             .smTemp {
                 width: 250px;
