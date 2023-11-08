@@ -13,7 +13,7 @@ $sql = "DELETE FROM form_details WHERE templateImg = '$imgNameToDelete'";
 // Prepare and execute the query
 $stmt = $conn->prepare($sql);
 $stmt->execute();
-header("Location: ../new_index_oshnda.php?delete=success");
+header("Location: ../index.php?delete=success");
 $folder = 'image/';
 if ($stmt->execute()) {
     echo "Data deleted successfully.";

@@ -24,7 +24,6 @@
                 const url = localStorage.getItem("recent-image");
                 $("#selected-image").css({
                     'background': 'url(' + url + ') center/cover no-repeat',
-
                 });
 
 
@@ -85,10 +84,10 @@
         let color = $('#inpLinkColorPick').val();
         let colorWithoutHash = color.substring(1);
 
-        let srcTwitter = "https://img.icons8.com/ios-glyphs/30/" + colorWithoutHash + "/twitter.png";
-        let srcLinked = "https://img.icons8.com/ios-glyphs/30/" + colorWithoutHash + "/linkedin.png";
-        let srcFBook = "https://img.icons8.com/ios-glyphs/30/" + colorWithoutHash + "/facebook-new.png";
-        let srcInsta = "https://img.icons8.com/ios-glyphs/30/" + colorWithoutHash + "/instagram-new.png";
+        let srcTwitter = "https://img.icons8.com/ios-filled/30/" + colorWithoutHash + "/twitterx--v1.png";
+        let srcLinked = "https://img.icons8.com/ios-filled/30/" + colorWithoutHash + "/linkedin.png";
+        let srcFBook = "https://img.icons8.com/ios-filled/30/" + colorWithoutHash + "/facebook--v1.png";
+        let srcInsta = "https://img.icons8.com/ios-filled/30/" + colorWithoutHash + "/instagram-new--v1.png";
 
         $("#imgTwitter").attr("src", srcTwitter);
         $("#imgLinkedIn").attr("src", srcLinked);
@@ -101,6 +100,7 @@
             'background': 'white'
         });
         $("#file-input").val('');
+        localStorage.setItem('recent-image',  "");
     });
 
     const range = $("#inpFontSize");
@@ -188,10 +188,10 @@
         let color = $('#inpLinkColor').val();
         let colorWithoutHash = color.substring(1);
 
-        let srcTwitter = "https://img.icons8.com/ios-glyphs/30/" + colorWithoutHash + "/twitter.png";
-        let srcLinked = "https://img.icons8.com/ios-glyphs/30/" + colorWithoutHash + "/linkedin.png";
-        let srcFBook = "https://img.icons8.com/ios-glyphs/30/" + colorWithoutHash + "/facebook-new.png";
-        let srcInsta = "https://img.icons8.com/ios-glyphs/30/" + colorWithoutHash + "/instagram-new.png";
+        let srcTwitter = "https://img.icons8.com/ios-filled/30/" + colorWithoutHash + "/twitterx--v1.png";
+        let srcLinked = "https://img.icons8.com/ios-filled/30/" + colorWithoutHash + "/linkedin.png";
+        let srcFBook = "https://img.icons8.com/ios-filled/30/" + colorWithoutHash + "/facebook--v1.png";
+        let srcInsta = "https://img.icons8.com/ios-filled/30/" + colorWithoutHash + "/instagram-new--v1.png";
 
         linkColorPicker.val(linkColorValue.val());
         $("#imgTwitter").attr("src", srcTwitter);

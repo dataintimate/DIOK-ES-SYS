@@ -34,7 +34,6 @@
         }
 
         ::-webkit-scrollbar {
-            width: 10px;
             background: rgba(21, 72, 158, 0.14);
         }
 
@@ -143,11 +142,7 @@
         }
 
         #firstCol::-webkit-scrollbar {
-            border-radius: 0px 10px 10px 0px;
-        }
-
-        #firstCol::-webkit-scrollbar-thumb {
-            border-radius: 0px 10px 10px 0px;
+            width: 8px;
         }
 
         #secondCol {
@@ -157,11 +152,7 @@
         }
 
         #secondCol::-webkit-scrollbar {
-            border-radius: 10px 0px 0px 10px;
-        }
-
-        #secondCol::-webkit-scrollbar-thumb {
-            border-radius: 10px 0px 0px 10px;
+            width: 8px;
         }
 
         .header-icon {
@@ -193,6 +184,7 @@
         #txtSavedSignatures {
             display: inline-block;
             color: #4a7ecb;
+            margin-bottom: 30px;
         }
 
         #cardBodyInput {
@@ -215,7 +207,7 @@
             margin: auto;
         }
 
-        .svdTemp {
+       /* .svdTemp {
             width: 270px;
             height: 135px;
             box-shadow: 0 -1px 8px 2px rgba(0, 0, 0, 0.14);
@@ -228,7 +220,7 @@
 
         .svdTemp:last-of-type {
             margin-bottom: 60px;
-        }
+        }*/
 
         .smTemp {
             width: 270px;
@@ -310,25 +302,24 @@
             max-height: 90%;
             padding: 50px;
             overflow-y: auto;
-            border-radius: 10px;
             color: white;
             line-height: 30px;
             display: none;
         }
 
         #docDiv::-webkit-scrollbar {
-            border-radius: 0px 10px 10px 0px;
+            /*border-radius: 10px;*/
+            width: 8px;
         }
 
         #docDiv::-webkit-scrollbar-thumb {
-            border-radius: 0px 10px 10px 0px;
+           color: red;
         }
 
         #docDiv > .fa-circle-xmark {
-            position: sticky;
-            right: 0px;
-            left: 100%;
-            top: 0px;
+            position: absolute;
+            right: 50px;
+            top: 50px;
             font-size: 1.5em;
             cursor: pointer;
         }
@@ -347,35 +338,35 @@
         }
 
         #firstTemp {
-            background: url("assets/templateImages/templateOne.jpg");
+            background: url("assets/templateImages/temp1.jpg");
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
         }
 
         #secondTemp {
-            background: url("assets/templateImages/templateTwo.png");
+            background: url("assets/templateImages/temp2.jpg");
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
         }
 
         #thirdTemp {
-            background: url("assets/templateImages/templateThree.png");
+            background: url("assets/templateImages/temp3.jpg");
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
         }
 
         #fourthTemp {
-            background: url("assets/templateImages/templateFour.png");
+            background: url("assets/templateImages/temp4.jpg");
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
         }
 
         #fifthTemp {
-            background: url("assets/templateImages/templateFive.png");
+            background: url("assets/templateImages/temp5.jpg");
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
@@ -429,6 +420,14 @@
                 padding-bottom: 18px;
                 padding-top: 18px;
             }
+
+            #firstCol::-webkit-scrollbar {
+                width: 5px;
+            }
+
+            #secondCol::-webkit-scrollbar {
+                width: 5px;
+            }
         }
 
         @media all and (max-width: 992px) and (min-width: 768px) {
@@ -444,7 +443,7 @@
                 width: 90%;
                 height: 60vh;
                 margin: auto;
-                border: 2px solid #c9c9c9;
+                border: 1px solid #1F365C;
                 border-radius: 10px;
             }
 
@@ -461,30 +460,30 @@
                 padding-bottom: 50px;
             }
 
-            .svdTemp:first-of-type {
-                margin-top: 30px;
-                margin-bottom: 0;
-            }
+            /*.svdTemp:first-of-type {*/
+            /*    margin-top: 30px;*/
+            /*    margin-bottom: 0;*/
+            /*}*/
 
-            .svdTemp:last-of-type {
-                margin-bottom: 0px;
-            }
+            /*.svdTemp:last-of-type {*/
+            /*    margin-bottom: 0px;*/
+            /*}*/
 
-            .smTemp:first-of-type {
-                margin-top: 30px;
-                margin-bottom: 0;
-            }
+            /*.smTemp:first-of-type {*/
+            /*    margin-top: 30px;*/
+            /*    margin-bottom: 0;*/
+            /*}*/
 
-            .smTemp:last-of-type {
-                margin-bottom: 0px;
-            }
+            /*.smTemp:last-of-type {*/
+            /*    margin-bottom: 0px;*/
+            /*}*/
 
-            .svdTemp {
-                width: 280px;
-                height: 140px;
-                margin-top: 30px;
-                margin-bottom: 0;
-            }
+            /*.svdTemp {*/
+            /*    width: 280px;*/
+            /*    height: 140px;*/
+            /*    margin-top: 30px;*/
+            /*    margin-bottom: 0;*/
+            /*}*/
 
             .smTemp {
                 width: 280px;
@@ -513,9 +512,47 @@
                 padding: 8px 12px;
                 cursor: pointer;
             }
+
+            #firstCol::-webkit-scrollbar {
+                width: 0px;
+            }
+
+            #secondCol::-webkit-scrollbar {
+                width: 0px;
+            }
+
+            ::-webkit-scrollbar {
+                width: 0px;
+            }
+
+            #docDiv {
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                margin: auto;
+                position: fixed;
+                max-width: 100%;
+                max-height: 100%;
+                line-height: 30px;
+                z-index: 100;
+            }
         }
 
         @media all and (max-width: 768px) and (min-width: 577px) {
+
+            #docDiv {
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                margin: auto;
+                position: fixed;
+                max-width: 100%;
+                max-height: 100%;
+                line-height: 30px;
+                z-index: 100;
+            }
 
             #firstRow {
                 */ justify-content: center;
@@ -601,9 +638,45 @@
                 padding: 8px 12px;
                 cursor: pointer;
             }
+
+            #firstCol::-webkit-scrollbar {
+                width: 0px;
+            }
+
+            #secondCol::-webkit-scrollbar {
+                width: 0px;
+            }
+
+            ::-webkit-scrollbar {
+                width: 0px;
+            }
         }
 
         @media all and (max-width: 576px) {
+            #docDiv {
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                margin: auto;
+                position: fixed;
+                max-width: 100%;
+                max-height: 100%;
+                line-height: 30px;
+                z-index: 100;
+            }
+
+            #firstCol::-webkit-scrollbar {
+                width: 0px;
+            }
+
+            #secondCol::-webkit-scrollbar {
+                width: 0px;
+            }
+
+            ::-webkit-scrollbar {
+                width: 0px;
+            }
 
             #firstRow {
                 */ justify-content: center;
@@ -666,16 +739,41 @@
         }
 
         @media all and (max-width: 450px) {
+            #docDiv {
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                margin: auto;
+                position: fixed;
+                max-width: 100%;
+                max-height: 100%;
+                line-height: 30px;
+                z-index: 100;
+            }
+
+            #firstCol::-webkit-scrollbar {
+                width: 0px;
+            }
+
+            #secondCol::-webkit-scrollbar {
+                width: 0px;
+            }
+
+            ::-webkit-scrollbar {
+                width: 0px;
+            }
+
             #templateSection {
                 width: 300px;
             }
 
-            .svdTemp {
-                width: 250px;
-                height: 125px;
-                margin-top: 30px;
-                margin-bottom: 0;
-            }
+            /*.svdTemp {*/
+            /*    width: 250px;*/
+            /*    height: 125px;*/
+            /*    margin-top: 30px;*/
+            /*    margin-bottom: 0;*/
+            /*}*/
 
             .smTemp {
                 width: 250px;
@@ -707,6 +805,45 @@
         }
 
         @media all and (max-width: 350px) {
+            #docDiv {
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                margin: auto;
+                position: fixed;
+                max-width: 100%;
+                max-height: 100%;
+                line-height: 30px;
+                z-index: 100;
+                padding: 30px;
+            }
+
+            #docDiv > p {
+                font-size: 10px !important;
+            }
+
+            #docDiv > h5 {
+                font-size: 14px;
+            }
+
+            #docDiv > .fa-circle-xmark {
+                right: 30px;
+                top: 30px;
+            }
+
+            #firstCol::-webkit-scrollbar {
+                width: 0px;
+            }
+
+            #secondCol::-webkit-scrollbar {
+                width: 0px;
+            }
+
+            ::-webkit-scrollbar {
+                width: 0px;
+            }
+
             #templateSection {
                 width: 250px;
             }
@@ -916,7 +1053,7 @@
                         <div class="mt-4 d-flex justify-content-center">
                             <div id="cardBodyImageDiv" class="">
                                 <button id="uploadBtn" type="button" class="btn btnUploadImg">Upload Image</button>
-                                <input type="file" name="choosefile" id="file-input" style="display: block;">
+                                <input type="file" name="choosefile" id="file-input" style="display: none;">
 
                                 <button id="removeBtn" type="button" class="btn btnRemoveImg mt-3">Remove Image</button>
                                 <input type="text" name="tempId" id="tempId" class="d-none">
@@ -941,7 +1078,7 @@
             <a class="clear" href="#"><i id="txtClearAllIcn" class="fa-solid fa-xmark fa-l p-1 mt-3"></i>
                 <p id="txtClearAll">Clear Input Fields</p></a><br>
             <a class="" href="#"><p id="txtSavedSignatures">Saved Signatures</p></a>
-            <a class="" href="#"><p id="txtNewSignature">Create a New Signature</p></a>
+            <a class="" href="#"><p id="txtNewSignature">New Signature</p></a>
             <div id="instructionsDiv"><p>Instructions</p></div>
             <div id="docDiv">
                 <i class="fa-regular fa-circle-xmark"></i>
@@ -973,7 +1110,13 @@
                 <hr>
                 <p>After creating the signature simply click on the "Save Signature" button.</p>
                 <p>That's it. Your signature is saved now.</p>
-                <p>You can come back and edit your signature later.</p>
+                <p>You can come back and edit your signature later.</p><br><br>
+
+                <h5>How to Use the Signature ?</h5>
+                <hr>
+                <p>You can simply copy the email signature by clicking on the "Copy Signature" button.</p>
+                <p>That's it. You are ready to use your signature.</p>
+                <p>You can use the copied signature in your preferred email client.</p>
             </div>
         </div>
 </section>

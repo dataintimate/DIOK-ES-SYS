@@ -18,7 +18,7 @@ $sql = "INSERT INTO template (templates, tempId) VALUES ('$filename', NULL)";
 // Execute the SQL query
 if (mysqli_query($connect, $sql)) {
     // If the query was successful, redirect to another page
-    header("Location: ../new_index_oshnda.php?save=success");
+    header("Location: ../index.php?save=success");
 } else {
     // If the query failed, display an error message
     echo "Error: " . $sql . "<br>" . mysqli_error($connect);

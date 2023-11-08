@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         p{
-            margin-bottom: 15px;
+            margin-bottom: 10px;
         }
         #selected-image{
             width: 100px !important;
@@ -12,6 +12,15 @@
         }
         a>img{
             margin-bottom: 15px;
+        }
+        #imgInsta{
+            margin-bottom: 0;
+        }
+        #td2pFirst{
+            margin-top: 20px;
+        }
+        #td2pLast{
+            margin-bottom: 20px;
         }
         @media all and (min-width: 320px) and (max-width: 375px){
             #name,#title,#companyName,#email,#mobileNo,#officeNo,#webUrl,#address{
@@ -36,6 +45,15 @@
                 height: 20px !important;
                 margin-bottom: 5px;
             }
+            #td2pFirst{
+                margin-top: 0px;
+            }
+            #td2pLast{
+                margin-bottom: 0px;
+            }
+            .td2p{
+                font-size: 5px !important;
+            }
         }
         @media all and (min-width: 375px) and (max-width: 450px){
             #name,#title,#companyName,#email,#mobileNo,#officeNo,#webUrl,#address{
@@ -59,6 +77,15 @@
                 width: 20px !important;
                 height: 20px !important;
                 margin-bottom: 5px;
+            }
+            #td2pFirst{
+                margin-top: 0px;
+            }
+            #td2pLast{
+                margin-bottom: 0px;
+            }
+            .td2p{
+                font-size: 5px !important;
             }
         }
         @media all and (min-width: 450px) and (max-width: 500px){
@@ -87,11 +114,20 @@
                 height: 20px !important;
                 margin-bottom: 5px;
             }
+            #td2pFirst{
+                margin-top: 0px;
+            }
+            #td2pLast{
+                margin-bottom: 0px;
+            }
+            .td2p{
+                font-size: 12px !important;
+            }
         }
         @media all and (min-width: 500px) and (max-width: 600px){
             p{
                 font-size: 14px !important;
-                margin-bottom: 10px;
+                margin-bottom: 3px;
             }
             .example{
                 width: 460px !important;
@@ -111,7 +147,7 @@
         @media all and (min-width: 600px) and (max-width: 720px){
             p{
                 font-size: 14px !important;
-                margin-bottom: 12px;
+                margin-bottom: 5px;
             }
             .example{
                 width: 550px !important;
@@ -133,37 +169,37 @@
 <body>
 <div>
     <table class="example" cellspacing="0" cellpadding="0" width="675px"
-           style="font-family: Arial, sans-serif; border-collapse: collapse; border-radius: 10px;">
+           style="font-family: Arial, sans-serif; border-collapse: collapse;">
         <tr>
-            <td class="backgroundColor2" id="side" height="250px"  width="200px" style="background-color: #000000; border-radius: 10px 0 0 10px; padding: 7px">
+            <td class="backgroundColor2" id="side" height="250px"  width="200px" style="background-color: #000000; padding: 7px">
                <span id="selected-image" style="display: block; border-radius: 50%; background-color: white; margin: auto">
 
                </span>
             </td>
-            <td class="backgroundColor" style="position:relative; background-color: #c1c1c1; text-align: center; width: 500px; padding: 10px">
-                <p style="font-size: 14px; font-weight: bold; color: black"><span id="name">Mark Mason</span></p>
-                <p style="font-size: 14px; color: black"><span id="title">Marketing Manager</span></p>
-                <p style="font-size: 14px; color: black"><span id="companyName">XYZ Corporation</span></p>
-                <p style="font-size: 14px; color: black"><a href="mailto:youremail@example.com" style="color: #000000; text-decoration: none;"><span id="email">markmsn@gmail.com</span></a></p>
-                <p style="font-size: 14px; color: black"><span id="mobileNo">+1 (555) 987-6543</span></p>
-                <p style="font-size: 14px; color: black"><span id="officeNo">+1 (555) 123-4567</span></p>
-                <p style="font-size: 14px; color: black"><span id="webUrl">www.xyzcorp.com</span></p>
-                <p style="font-size: 14px; color: black"><span id="address">123 Main Street, Suite 456, Cityville</span></p>
+            <td class="backgroundColor td2" style="position:relative; background-color: #c1c1c1; text-align: left; width: 500px; padding: 10px; padding-left: 30px">
+                <p class="td2p" id="td2pFirst" style="font-size: 14px; font-weight: bold; color: black"><span id="name">Mark Mason</span></p>
+                <p class="td2p" style="font-size: 14px; color: black"><span id="title">Marketing Manager</span></p>
+                <p class="td2p" style="font-size: 14px; color: black"><span id="companyName">XYZ Corporation</span></p>
+                <p class="td2p"  style="font-size: 14px; color: black"><span id="address">123 Main Street, Suite 456, Cityville</span></p>
+                <p class="td2p" style="font-size: 14px; color: black"><a href="mailto:youremail@example.com" style="color: #000000; text-decoration: none;"><span id="email">markmsn@gmail.com</span></a></p>
+                <p class="td2p" style="font-size: 14px; color: black"><span id="mobileNo">+1 (555) 987-6543</span></p>
+                <p class="td2p" style="font-size: 14px; color: black"><span id="officeNo">+1 (555) 123-4567</span></p>
+                <p class="td2p" id="td2pLast" style="font-size: 14px; color: black"><span id="webUrl">www.xyzcorp.com</span></p>
             </td>
-            <td id="mid" class="backgroundColor"  style="background-color:#c1c1c1; width: 50px; border-radius: 0 10px 10px 0">
+            <td id="mid" class="backgroundColor"  style="background-color:#c1c1c1; width: 50px;">
                 <div style="display: flex; flex-direction: column; padding: 10px; gap: 10px;">
                     <p style="display:grid; margin: 0px;">
                         <a id="linked" href="" style=" margin-right: 7px; font-size: 0px; ">
-                            <img id="imgLinkedIn" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/linkedin.png" alt="linkedin"/>
+                            <img id="imgLinkedIn" width="30" height="30" src="https://img.icons8.com/ios-filled/30/FFFFFF/linkedin.png" alt="linkedin"/>
                         </a>
                         <a id="fbook" href="" style=" margin-right: 7px; font-size: 0px; ">
-                            <img id="imgFBook" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/facebook-new.png" alt="facebook-new"/>
+                            <img id="imgFBook" width="30" height="30" src="https://img.icons8.com/ios-filled/30/FFFFFF/facebook--v1.png" alt="facebook--v1"/>
                         </a>
                         <a id="twi" href="" style=" margin-right: 7px; font-size: 0px;">
-                            <img id="imgTwitter" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/twitter.png" alt="twitter"/>
+                            <img id="imgTwitter" width="30" height="30" src="https://img.icons8.com/ios-filled/30/FFFFFF/twitterx--v1.png" alt="twitterx--v1"/>
                         </a>
                         <a id="insta" href="" style=" font-size: 0px; margin-right: 7px">
-                            <img id="imgInsta" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/instagram-new.png" alt="instagram-new"/>
+                            <img id="imgInsta" width="30" height="30" src="https://img.icons8.com/ios-filled/30/FFFFFF/instagram-new--v1.png" alt="instagram-new--v1"/>
                         </a>
                     </p>
                 </div>

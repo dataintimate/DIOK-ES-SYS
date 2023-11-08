@@ -1,6 +1,3 @@
-
-
-
 <?php
 $dbSeverName = "localhost";
 $dbUserName = "root";
@@ -64,7 +61,7 @@ if ($insert) {
 // Save the image to the file
     if (file_put_contents($filename1, $image_data)) {
         // echo "Image saved as: " . $filename;
-        header("Location: ../new_index_oshnda.php?save=success");
+        header("Location: ../index.php?save=success");
     } else {
         die("Failed to save the image: " . error_get_last()['message']);
     }
@@ -72,7 +69,6 @@ if ($insert) {
 } else {
     echo "Error: " . mysqli_error($conn);
 }
-
 
 ?>
 

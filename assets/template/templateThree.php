@@ -19,7 +19,7 @@
         .td4{
             height: 50px !important;
         }
-        .td4p{
+        .td2BigP{
             margin-right: 10px !important;
         }
         .td2p{
@@ -192,7 +192,7 @@
 </head>
 <body>
 <div >
-    <table class="example backgroundColor templateThree" style="color: rgb(0, 0, 0); font-family: Arial, serif; border-radius: 10px; background-color: #C4C4C4; ">
+    <table class="example backgroundColor templateThree" style="color: rgb(0, 0, 0); font-family: Arial, serif; background-color: #C4C4C4; ">
         <tr style="border-bottom: 1px solid white">
             <td class="td1" style="">
                         <span id="selected-image" style="display: block; border-radius: 50%; background-color: white;">
@@ -216,16 +216,16 @@
             <td class="td4" colspan="3" style=" ">
                 <p class="td4p" id="s_mid_icons" style="display: flex; flex-direction: row; width: max-content; float: right">
                     <a id="linked" href="" style=" margin-right: 7px; font-size: 0px; ">
-                        <img id="imgLinkedIn" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/linkedin.png" alt="linkedin"/>
+                        <img id="imgLinkedIn" width="30" height="30" src="https://img.icons8.com/ios-filled/30/FFFFFF/linkedin.png" alt="linkedin"/>
                     </a>
                     <a id="fbook" href="" style=" margin-right: 7px; font-size: 0px; ">
-                        <img id="imgFBook" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/facebook-new.png" alt="facebook-new"/>
+                        <img id="imgFBook" width="30" height="30" src="https://img.icons8.com/ios-filled/30/FFFFFF/facebook--v1.png" alt="facebook--v1"/>
                     </a>
                     <a id="twi" href="" style=" margin-right: 7px; font-size: 0px;">
-                        <img id="imgTwitter" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/twitter.png" alt="twitter"/>
+                        <img id="imgTwitter" width="30" height="30" src="https://img.icons8.com/ios-filled/30/FFFFFF/twitterx--v1.png" alt="twitterx--v1"/>
                     </a>
                     <a id="insta" href="" style=" font-size: 0px; margin-right: 7px">
-                        <img id="imgInsta" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/instagram-new.png" alt="instagram-new"/>
+                        <img id="imgInsta" width="30" height="30" src="https://img.icons8.com/ios-filled/30/FFFFFF/instagram-new--v1.png" alt="instagram-new--v1"/>
                     </a>
                 </p>
             </td>

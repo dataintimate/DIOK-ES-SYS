@@ -205,13 +205,10 @@
 </head>
 <body>
 <div>
-    <table class="example backgroundColor templateTwo" width="700px" cellspacing="0" cellpadding="0" style="font-family: Arial, serif; background-color:  #C4C4C4; border-radius: 10px; height: max-content">
+    <table class="example backgroundColor templateTwo" width="700px" cellspacing="0" cellpadding="0" style="font-family: Arial, serif; background-color:  #C4C4C4; height: max-content">
         <tr>
             <td class="td1" width="400px" style="padding: 15px;">
-                <!-- picture -->
-                <!--                <div id="selected-image" style="width: 80px; height: 80px; border-radius: 50%; background-color: white; "></div>-->
                 <span id="selected-image" style="display: block; border-radius: 50%; background-color: white; float: right">
-
                </span>
             </td>
             <td class="td2" width="400px" style="padding: 15px; text-align: left; font-size: 14px;">
@@ -220,8 +217,16 @@
                 <p id="companyName" class="td2p lastTd2p" style=" color: black;">XYZ Corporation</p>
             </td>
         </tr>
+        <tr style="">
+            <td style="">
+                <div class="line" style="background-color: black; max-height: 1px; height: 1px;"></div>
+            </td>
+            <td style="">
+                <div class="line" style="background-color: black; max-height: 1px; height: 1px;"></div>
+            </td>
+        </tr>
         <tr>
-            <td class="td3" colspan="3" style="padding: 15px 20px; padding-bottom: 0px; border-top: 1px solid black; font-size: 14px;">
+            <td class="td3" colspan="3" style="padding: 15px 20px; padding-bottom: 0px; font-size: 14px;">
                 <p class="td3p" style=" color: black;"><a href="mailto:youremail@example.com" style="color: #000000; text-decoration: none;"><span id="email">markmsn@gmail.com</span></a></p>
                 <p class="td3p" style=" color: black;"><span id="address">123 Main Street, Suite 456, Cityville</span></p>
                 <p class="td3p" style=" color: black;"><span id="mobileNo">+1 (555) 987-6543</span></p>
@@ -233,16 +238,16 @@
             <td class="td4" colspan="3" style="padding: 10px; padding-top: 5px; padding-right: 20px;  ">
                 <p id="s_mid_icsons" style="display: flex; flex-direction: row; width: max-content; float: right">
                     <a id="linked" href="" style=" margin-right: 7px; font-size: 0px; ">
-                        <img id="imgLinkedIn" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/linkedin.png" alt="linkedin"/>
+                        <img id="imgLinkedIn" width="30" height="30" src="https://img.icons8.com/ios-filled/30/FFFFFF/linkedin.png" alt="linkedin"/>
                     </a>
                     <a id="fbook" href="" style=" margin-right: 7px; font-size: 0px; ">
-                        <img id="imgFBook" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/facebook-new.png" alt="facebook-new"/>
+                        <img id="imgFBook" width="30" height="30" src="https://img.icons8.com/ios-filled/30/FFFFFF/facebook--v1.png" alt="facebook--v1"/>
                     </a>
                     <a id="twi" href="" style=" margin-right: 7px; font-size: 0px;">
-                        <img id="imgTwitter" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/twitter.png" alt="twitter"/>
+                        <img id="imgTwitter" width="30" height="30" src="https://img.icons8.com/ios-filled/30/FFFFFF/twitterx--v1.png" alt="twitterx--v1"/>
                     </a>
                     <a id="insta" href="" style=" font-size: 0px; margin-right: 7px">
-                        <img id="imgInsta" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/instagram-new.png" alt="instagram-new"/>
+                        <img id="imgInsta" width="30" height="30" src="https://img.icons8.com/ios-filled/30/FFFFFF/instagram-new--v1.png" alt="instagram-new--v1"/>
                     </a>
                 </p>
 

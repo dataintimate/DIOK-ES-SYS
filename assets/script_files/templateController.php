@@ -47,7 +47,7 @@ $conn->close();
 
             var twitter = localStorage.getItem('twitter');
             var instagram = localStorage.getItem('instagram');
-            var weurl = localStorage.getItem("recent-image");
+            var imgUrl = localStorage.getItem("recent-image");
             var fontFamily = localStorage.getItem('fontFamily');
             var fontSize = localStorage.getItem('fontSize');
             var textColor = localStorage.getItem('textColor');
@@ -59,7 +59,7 @@ $conn->close();
             if (savedText !== null) {
                 $('#name').text(savedText);
             }else {
-                $('#name').text('Mark Maxon');
+                $('#name').text('Mark Mason');
             }
             if (title !== null) {
                 $('#title').text(title);
@@ -107,10 +107,15 @@ $conn->close();
             $('#twi').attr('href', twitter);
             $('#insta').attr('href', instagram);
 
-            $("#selected-image").css({
-                'background': 'url(' + weurl + ') center/cover no-repeat',
-
-            });
+            if(imgUrl=="" || imgUrl==null){
+                $("#selected-image").css({
+                    'background': 'white',
+                });
+            }else{
+                $("#selected-image").css({
+                    'background': 'url(' + imgUrl + ') center/cover no-repeat',
+                });
+            }
             $("#name,#title,#companyName,#email,#address,#mobileNo,#officeNo,#webUrl").css({
                 'font-family': fontFamily
             })
@@ -129,10 +134,10 @@ $conn->close();
             let color = linkColor;
             let colorWithoutHash = color.substring(1);
 
-            let srcTwitter = "https://img.icons8.com/ios-glyphs/30/" + colorWithoutHash + "/twitter.png";
-            let srcLinked = "https://img.icons8.com/ios-glyphs/30/" + colorWithoutHash + "/linkedin.png";
-            let srcFBook = "https://img.icons8.com/ios-glyphs/30/" + colorWithoutHash + "/facebook-new.png";
-            let srcInsta = "https://img.icons8.com/ios-glyphs/30/" + colorWithoutHash + "/instagram-new.png";
+            let srcTwitter = "https://img.icons8.com/ios-filled/30/" + colorWithoutHash + "/twitterx--v1.png";
+            let srcLinked = "https://img.icons8.com/ios-filled/30/" + colorWithoutHash + "/linkedin.png";
+            let srcFBook = "https://img.icons8.com/ios-filled/30/" + colorWithoutHash + "/facebook--v1.png";
+            let srcInsta = "https://img.icons8.com/ios-filled/30/" + colorWithoutHash + "/instagram-new--v1.png";
 
             $("#imgTwitter").attr("src", srcTwitter);
             $("#imgLinkedIn").attr("src", srcLinked);
@@ -566,19 +571,52 @@ $conn->close();
         $('#webUrl').text("www.xyzcorp.com");
         $('#address').text("123 Main Street, Suite 456, Cityville");
         $("#selected-image").css({'background': 'white'});
+        localStorage.clear();
     }
 
     $('#docDiv>.fa-circle-xmark').click(
         function () {
             $('#docDiv').fadeOut(500);
+            $("#templateSection").css("display", "flex");
+            $("#btnCopy").css("display", "inline-block");
+            $("#txtClearAllIcn, #txtClearAll").css("display", "inline-block");
+            if($(".smTemp").css("display")=="none"){
+                $("#txtNewSignature").css("display", "block");
+                $("#btnUpdate").css("display", "inline-block");
+                $("#btnDelete").css("display", "inline-block");
+            }else{
+                $("#txtSavedSignatures").css("display", "block");
+            }
         }
     );
 
     $('#instructionsDiv').click(
         function () {
-            $('#docDiv').fadeIn(500);
+            if($('#docDiv').css("display")=="none"){
+                $('#docDiv').fadeIn(500);
+                $("#templateSection").css("display", "none");
+                $("#btnCopy").css("display", "none");
+                $("#txtClearAllIcn, #txtClearAll").css("display", "none");
+                $("#txtSavedSignatures").css("display", "none");
+                $("#btnUpdate").css("display", "none");
+                $("#btnDelete").css("display", "none");
+                $("#txtNewSignature").css("display", "none");
+            }else{
+                $('#docDiv').fadeOut(500);
+                $("#templateSection").css("display", "flex");
+                $("#btnCopy").css("display", "inline-block");
+                $("#txtClearAllIcn, #txtClearAll").css("display", "inline-block");
+                if($(".smTemp").css("display")=="none"){
+                    $("#txtNewSignature").css("display", "block");
+                    $("#btnUpdate").css("display", "inline-block");
+                    $("#btnDelete").css("display", "inline-block");
+                }else{
+                    $("#txtSavedSignatures").css("display", "block");
+                }
+            }
         }
     );
+
     $(window).on('load', function () {
         $("#templateSection").load("assets/template/templateOne.php");
         $('#tempId').val('1');
@@ -788,10 +826,10 @@ $conn->close();
         let color = linkColor;
         let colorWithoutHash = color.substring(1);
 
-        let srcTwitter = "https://img.icons8.com/ios-glyphs/30/" + colorWithoutHash + "/twitter.png";
-        let srcLinked = "https://img.icons8.com/ios-glyphs/30/" + colorWithoutHash + "/linkedin.png";
-        let srcFBook = "https://img.icons8.com/ios-glyphs/30/" + colorWithoutHash + "/facebook-new.png";
-        let srcInsta = "https://img.icons8.com/ios-glyphs/30/" + colorWithoutHash + "/instagram-new.png";
+        let srcTwitter = "https://img.icons8.com/ios-filled/30/" + colorWithoutHash + "/twitterx--v1.png";
+        let srcLinked = "https://img.icons8.com/ios-filled/30/" + colorWithoutHash + "/linkedin.png";
+        let srcFBook = "https://img.icons8.com/ios-filled/30/" + colorWithoutHash + "/facebook--v1.png";
+        let srcInsta = "https://img.icons8.com/ios-filled/30/" + colorWithoutHash + "/instagram-new--v1.png";
 
         if (color != "") {
             $("#imgTwitter").attr("src", srcTwitter);

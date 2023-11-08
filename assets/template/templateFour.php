@@ -3,230 +3,194 @@
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        .templateFour{
-            width: 675px !important;
-            height: 300px !important;
-        }
-        .td1{
-            width: 110px;
-        }
-        .td2{
-            width: 240px;
-        }
-        .td3{
-            width: 300px !important;
-        }
-        .td4{
-            height: 50px !important;
-        }
-        .td2p{
-            margin-top: 10px;
-            margin-bottom: 10px;
+        .td1p{
+            margin-bottom: 0px;
         }
         #selected-image{
-            width: 80px !important;
-            height: 80px !important;
-            margin: auto !important;
+            width: 100px !important;
+            height: 100px !important;
         }
-        #email{
-            margin-top: 10px;
+        .td2p{
+            margin-bottom: 10px;
         }
-        #s_mid_icons{
-            margin-bottom: 10px !important;
-            margin-top: 10px !important;
+        #td2pFirst{
+            margin-top: 20px;
         }
-        .td3pLast{
-            margin-bottom: 0px !important;
+        #td2pLast{
+            margin-bottom: 20px;
         }
-        @media all and (min-width: 577px) and (max-width: 768px) {
-            .templateFour{
-                width: 500px !important;
-                height: 250px !important;
-            }
-            #selected-image{
-                width: 70px !important;
-                height: 70px !important;
-                margin: auto !important;
-            }
+        #td2div{
+            margin-left: 20px;
+        }
+        @media all and (min-width: 320px) and (max-width: 375px){
             #name,#title,#companyName,#email,#mobileNo,#officeNo,#webUrl,#address{
-                font-size: 10px !important;
+                font-size: 8px !important;
             }
-            .td4{
-                height: 40px !important;
+            .example{
+                width: 283px !important;
             }
-            #s_mid_icons{
-                margin-bottom: 5px !important;
-                margin-top: 5px !important;
-            }
-            a>img{
-                width: 25px !important;
-                height: 25px !important;
-            }
-            .td3p{
-                margin-bottom: 8px !important;
-            }
-        }
-        @media all and (max-width: 576px){
-            .templateFour{
-                width: 500px !important;
-                height: max-content !important;
-                max-width: 400px !important;
+            #side{
+                width: max-content !important;
+                height: 100% !important;
             }
             #selected-image{
                 width: 50px !important;
                 height: 50px !important;
-                margin: auto !important;
             }
-            #name,#title,#companyName,#email,#mobileNo,#officeNo,#webUrl,#address{
-                font-size: 9px !important;
-            }
-            .td4{
-                height: 35px !important;
-            }
-            #s_mid_icons{
-                margin-bottom: 5px !important;
-                margin-top: 5px !important;
+            p{
+                margin-bottom: 0;
             }
             a>img{
                 width: 20px !important;
                 height: 20px !important;
             }
-            .td3p{
-                margin-bottom: 7px !important;
+            #td2pFirst{
+                margin-top: 0px;
             }
-            .td2p{
-                margin-bottom: 2px !important;
-                margin-top: 2px !important;
+            #td2pLast{
+                margin-bottom: 0px;
             }
         }
-        @media all and (max-width: 450px){
-            .templateFour{
-                width: 300px !important;
-                height: max-content !important;
-                max-width: 300px !important;
+        @media all and (min-width: 375px) and (max-width: 450px){
+            #name,#title,#companyName,#email,#mobileNo,#officeNo,#webUrl,#address{
+                font-size: 9px !important;
+            }
+            .example{
+                width: 283px !important;
+            }
+            #side{
+                width: max-content !important;
+                height: 100% !important;
             }
             #selected-image{
-                width: 40px !important;
-                height: 40px !important;
-                margin: auto !important;
-            }
-            #name,#title,#companyName,#email,#mobileNo,#officeNo,#webUrl,#address{
-                font-size: 7px !important;
-            }
-            .td1{
                 width: 50px !important;
+                height: 50px !important;
             }
-            .td2{
-                width: 100px !important;
-            }
-            .td3{
-                width: 150px !important;
-            }
-            .td4{
-                height: 30px !important;
-            }
-            #s_mid_icons{
-                margin-bottom: 5px !important;
-                margin-top: 5px !important;
+            p{
+                margin-bottom: 0;
             }
             a>img{
-                width: 15px !important;
-                height: 15px !important;
+                width: 20px !important;
+                height: 20px !important;
             }
-            .td3p{
-                margin-bottom: 2px !important;
+            #td2pFirst{
+                margin-top: 0px;
             }
-            .td2p{
-                margin-bottom: 2px !important;
-                margin-top: 2px !important;
+            #td2pLast{
+                margin-bottom: 0px;
             }
         }
-        @media all and (max-width: 350px){
-            .templateFour{
-                width: 250px !important;
-                height: max-content !important;
-                max-width: 250px !important;
+        @media all and (min-width: 450px) and (max-width: 500px){
+            #name,#title,#companyName,#email,#mobileNo,#officeNo,#webUrl,#address{
+                font-size: 9px !important;
+            }
+            .example{
+                width: 350px !important;
+            }
+            #side{
+                width: 100px !important;
+                height: 100% !important;
+            }
+            #mid{
+                width: 200px !important;
             }
             #selected-image{
-                width: 30px !important;
-                height: 30px !important;
-                margin: auto !important;
+                width: 50px !important;
+                height: 50px !important;
             }
-            #name,#title,#companyName,#email,#mobileNo,#officeNo,#webUrl,#address{
-                font-size: 7px !important;
-            }
-            .td1{
-                width: 40px !important;
-            }
-            .td2{
-                width: 80px !important;
-            }
-            .td3{
-                width: 130px !important;
-            }
-            .td4{
-                height: 27px !important;
-            }
-            #s_mid_icons{
-                margin-bottom: 5px !important;
-                margin-top: 5px !important;
+            p{
+                margin-bottom: 0;
             }
             a>img{
-                width: 12px !important;
-                height: 12px !important;
+                width: 20px !important;
+                height: 20px !important;
             }
-            .td3p{
-                margin-bottom: 0px !important;
+            #td2pFirst{
+                margin-top: 0px;
             }
-            .td2p{
-                margin-bottom: 0px !important;
-                margin-top: 0px !important;
+            #td2pLast{
+                margin-bottom: 0px;
+            }
+        }
+        @media all and (min-width: 500px) and (max-width: 600px){
+            p{
+                font-size: 12px !important;
+                margin-bottom: 3px;
+            }
+            .example{
+                width: 460px !important;
+            }
+            #side{
+                height: 250px !important;
+                width: 130px;
+            }
+            #selected-image{
+                width: 70px !important;
+                height: 70px !important;
+            }
+        }
+        @media all and (min-width: 600px) and (max-width: 720px){
+            p{
+                font-size: 14px !important;
+                margin-bottom: 5px;
+            }
+            .example{
+                width: 550px !important;
+            }
+            #side{
+                height: 250px !important;
+                width: 150px;
+            }
+            #selected-image{
+                width: 80px !important;
+                height: 80px !important;
             }
         }
     </style>
 </head>
 <body>
-<div >
-    <table class="example backgroundColor templateFour" style="color: rgb(0, 0, 0); font-family: Arial, serif; border-radius: 10px; background-color: #C4C4C4; ">
-        <tr style="border-bottom: 1px solid white">
-            <td class="td2" style="padding: 10px 10px">
-                <p class="td2p" style="font-size: 14px; font-weight: bold; color: black"><span id="name">Mark Mason</span></p>
-                <p class="td2p" style="font-size: 14px; color: black"><span id="title">Marketing Manager</span></p>
-                <p class="td2p" style="font-size: 14px; color: black"><span id="companyName">XYZ Corporation</span></p>
-            </td>
-            <td class="td1" style="">
-                        <span id="selected-image" style="display: block; border-radius: 50%; background-color: white;">
-
-                        </span>
-            </td>
-            <td class="td3" style="padding: 10px">
-                <p class="td3p" style="font-size: 14px; color: black"><a href="mailto:youremail@example.com" style="color: #000000; text-decoration: none;"><span id="email">markmsn@gmail.com</span></a></p>
-                <p class="td3p" style="font-size: 14px; color: black"><span id="mobileNo">+1 (555) 987-6543</span></p>
-                <p class="td3p" style="font-size: 14px; color: black"><span id="officeNo">+1 (555) 123-4567</span></p>
-                <p class="td3p" style="font-size: 14px; color: black"><span id="webUrl">www.xyzcorp.com</span></p>
-                <p class="td3p td3pLast" style="font-size: 14px; color: black"><span id="address">123 Main Street, Suite 456, Cityville</span></p>
-            </td>
-        </tr>
-        <tr style="">
-            <td class="td4" colspan="3" style=" ">
-                <p class="td4p" id="s_mid_icons" style="display: flex; flex-direction: row; width: max-content; margin: auto !important; ">
+<div>
+    <table class="example" cellspacing="0" cellpadding="0" width="675px"
+           style="font-family: Arial, sans-serif; border-collapse: collapse; border-radius: 10px;">
+        <tr>
+            <td class="backgroundColor td1p" id="side" height="250px"  width="200px" style="background-color: #c1c1c1; padding: 10px;">
+               <span id="selected-image" style="display: block; border-radius: 50%; background-color: white; margin: auto">
+               </span>
+                <p class="td2p" style="font-size: 14px; color: black; margin-top: 10px"><span id="webUrl">www.xyzcorp.com</span></p>
+                <p id="s_mid_icsons" style="display: flex; flex-direction: row; width: max-content; margin: auto">
                     <a id="linked" href="" style=" margin-right: 7px; font-size: 0px; ">
-                        <img id="imgLinkedIn" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/linkedin.png" alt="linkedin"/>
+                        <!--                            <img  width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/linkedin.png" alt="linkedin"/>-->
+                        <img id="imgLinkedIn" width="30" height="30" src="https://img.icons8.com/ios-filled/30/FFFFFF/linkedin.png" alt="linkedin"/>
                     </a>
                     <a id="fbook" href="" style=" margin-right: 7px; font-size: 0px; ">
-                        <img id="imgFBook" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/facebook-new.png" alt="facebook-new"/>
+                        <!--                            <img id="imgFBook" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/facebook-new.png" alt="facebook-new"/>-->
+                        <img id="imgFBook" width="30" height="30" src="https://img.icons8.com/ios-filled/30/FFFFFF/facebook--v1.png" alt="facebook--v1"/>
                     </a>
                     <a id="twi" href="" style=" margin-right: 7px; font-size: 0px;">
-                        <img id="imgTwitter" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/twitter.png" alt="twitter"/>
+                        <!--                            <img id="imgTwitter" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/twitter.png" alt="twitter"/>-->
+                        <img id="imgTwitter" width="30" height="30" src="https://img.icons8.com/ios-filled/30/FFFFFF/twitterx--v1.png" alt="twitterx--v1"/>
                     </a>
-                    <a id="insta" href="" style=" font-size: 0px; margin-right: 7px">
-                        <img id="imgInsta" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/instagram-new.png" alt="instagram-new"/>
+                    <a id="insta" href="" style=" font-size: 0px;">
+                        <!--                            <img id="imgInsta" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/instagram-new.png" alt="instagram-new"/>-->
+                        <img id="imgInsta" width="30" height="30" src="https://img.icons8.com/ios-filled/30/FFFFFF/instagram-new--v1.png" alt="instagram-new--v1"/>
                     </a>
                 </p>
             </td>
+            <td class="line" style="width: 1px; background-color: #000000"></td>
+            <td class="backgroundColor td2" style="position:relative; background-color: #c1c1c1; text-align: left; width: 500px; padding: 10px;">
+                <div id="td2div">
+                    <p class="td2p" id="td2pFirst" style="font-size: 14px; font-weight: bold; color: black"><span id="name">Mark Mason</span></p>
+                    <p class="td2p" style="font-size: 14px; color: black"><span id="title">Marketing Manager</span></p>
+                    <p class="td2p" style="font-size: 14px; color: black"><span id="companyName">XYZ Corporation</span></p>
+                    <p class="td2p" style="font-size: 14px; color: black"><a href="mailto:youremail@example.com" style="color: #000000; text-decoration: none;"><span id="email">markmsn@gmail.com</span></a></p>
+                    <p class="td2p" style="font-size: 14px; color: black"><span id="address">123 Main Street, Suite 456, Cityville</span></p>
+                    <p class="td2p" style="font-size: 14px; color: black"><span id="mobileNo">+1 (555) 987-6543</span></p>
+                    <p class="td2p" id="td2pLast" style="font-size: 14px; color: black"><span id="officeNo">+1 (555) 123-4567</span></p>
+                </div>
+            </td>
+
         </tr>
     </table>
 </div>
-
 </body>
 </html>
