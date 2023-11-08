@@ -27,7 +27,6 @@ if ($result->num_rows > 0) {
 $conn->close();
 ?>
 
-
 <script>
     function setValues() {
         $(document).ready(function () {
@@ -41,7 +40,6 @@ $conn->close();
             var address = localStorage.getItem('address');
             var facebook = localStorage.getItem('facebook');
             var linkedin = localStorage.getItem('linkedIn');
-
             var twitter = localStorage.getItem('twitter');
             var instagram = localStorage.getItem('instagram');
             var imgUrl = localStorage.getItem("recent-image");
@@ -706,7 +704,7 @@ $conn->close();
             // Create a temporary link to download the image
             var a = document.createElement('a');
             a.href = imgData;
-            a.download = 'email_signature.png';
+            // a.download = 'email_signature.png';
             a.style.display = 'none';
             document.body.appendChild(a);
             a.click();
