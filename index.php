@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -11,7 +10,7 @@
           integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;700&family=Inconsolata:wght@300;400;700&family=Josefin+Sans:wght@300;400;700&family=Kanit:wght@300;400;700&family=Lora:wght@400;700&family=Merriweather:wght@300;400;700&family=Montserrat:wght@300;400;700&family=Nunito:wght@300;400;700&family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;700&family=Rubik:wght@300;400;700&family=Titillium+Web:wght@300;400;700&family=Work+Sans:wght@300;400;700&display=swap"
           rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="assets/fontawesome/css/all.css">
@@ -116,7 +115,7 @@
             display: none;
         }
 
-        #btnDelete{
+        #btnDelete {
             margin-top: 15px;
             border: 2px solid #1F365C;
             font-size: 12px;
@@ -313,7 +312,7 @@
         }
 
         #docDiv::-webkit-scrollbar-thumb {
-           color: red;
+            color: red;
         }
 
         #docDiv > .fa-circle-xmark {
@@ -984,70 +983,81 @@
                     </div>
                     <div id="cardBodyStyle" class="card-body px-5">
                         <h5 class="card-title colored-card-title mt-4">Stylish Your Signature</h5>
-
-                            <div class="row">
-                                <div class="col-md-6 col-lg-12 mb-3 mt-2 mt-xl-4">
-                                    <label for="slctFontFam" class="form-label">Font-Family</label>
-                                    <select name="fontFamily" id="slctFontFam" class="form-select"
-                                            aria-label="Default select example">
-                                        <option selected>Poppins</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-6 col-lg-12 mb-3 mt-2" style="position:relative">
-                                    <label for="Name" class="form-label">Font-Size</label>
-                                    <input name="fontSize" type="range" class="form-range" min="5" max="20" step="1"
-                                           value="14"
-                                           id="inpFontSize">
-                                    <span id="rangeValue"
-                                          style="font-size: 13px; font-weight: bold; position: absolute; white-space: nowrap; display: none; top: 0; background-color: #0D6EFD; padding: 5px 10px; border-radius: 5px; color: white">14</span>
-                                </div>
-                                <div class="col-md-6 col-lg-12 mb-3 mt-2 ">
-                                    <label for="inpBackColor" class="form-label">Background-Color 1</label>
-                                    <div class="d-flex">
-                                        <input name="backColor1" type="text" class="form-control w-50"
-                                               id="inpBackColor">
-                                        <div class="ms-2"
-                                             style="height: 34px; width: 34px; border-radius: 100%; overflow: hidden; border: 1px solid rgba(21,72,158,0.41)">
-                                            <input type="color" class="form-control form-control-color"
-                                                   id="inpBackColorPick" value="#c1c1c1" title="Choose your color">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-lg-12 mb-3 mt-2 ">
-                                    <label for="inpBackColor2" class="form-label">Background-Color 2</label>
-                                    <div class="d-flex">
-                                        <input name="backColor2" type="text" class="form-control w-50"
-                                               id="inpBackColor2">
-                                        <div class="ms-2"
-                                             style="height: 34px; width: 34px; border-radius: 100%; overflow: hidden; border: 1px solid rgba(21,72,158,0.41)">
-                                            <input type="color" class="form-control form-control-color"
-                                                   id="inpBackColorPick2" value="#000000" title="Choose your color">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-lg-12 mb-3 mt-2 ">
-                                    <label for="inpTextColor" class="form-label">Text-Color</label>
-                                    <div class="d-flex">
-                                        <input name="textColor" type="text" class="form-control w-50" id="inpTextColor">
-                                        <div class="ms-2"
-                                             style="height: 34px; width: 34px; border-radius: 100%; overflow: hidden; border: 1px solid rgba(21,72,158,0.41)">
-                                            <input type="color" class="form-control form-control-color"
-                                                   id="inpTextColorPick" value="#000000" title="Choose your color">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-lg-12 mb-3 mt-2 ">
-                                    <label for="inpLinkColor" class="form-label">Link-Color</label>
-                                    <div class="d-flex">
-                                        <input name="linkColor" type="text" class="form-control w-50" id="inpLinkColor">
-                                        <div class="ms-2"
-                                             style="height: 34px; width: 34px; border-radius: 100%; overflow: hidden; border: 1px solid rgba(21,72,158,0.41)">
-                                            <input type="color" class="form-control form-control-color"
-                                                   id="inpLinkColorPick" value="#ffffff" title="Choose your color">
-                                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-lg-12 mb-3 mt-2 mt-xl-4">
+                                <label for="slctFontFam" class="form-label">Font-Family</label>
+                                <select name="fontFamily" id="slctFontFam" class="form-select"
+                                        aria-label="Default select example">
+                                    <option selected>Poppins</option>
+                                    <option >Roboto</option>
+                                    <option >Montserrat</option>
+                                    <option >Nunito</option>
+                                    <option >Rubik</option>
+                                    <option >Merriweather</option>
+                                    <option >Kanit</option>
+                                    <option >Lora</option>
+                                    <option >Work Sans</option>
+                                    <option >Inconsolata</option>
+                                    <option >Titillium Web</option>
+                                    <option >Josefin Sans</option>
+                                    <option >Archivo</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 col-lg-12 mb-3 mt-2" style="position:relative">
+                                <label for="Name" class="form-label">Font-Size</label>
+                                <input name="fontSize" type="range" class="form-range" min="5" max="20" step="1"
+                                       value="14"
+                                       id="inpFontSize">
+                                <span id="rangeValue"
+                                      style="font-size: 13px; font-weight: bold; position: absolute; white-space: nowrap; display: none; top: 0; background-color: #0D6EFD; padding: 5px 10px; border-radius: 5px; color: white">14</span>
+                            </div>
+                            <div class="col-md-6 col-lg-12 mb-3 mt-2 ">
+                                <label for="inpBackColor" class="form-label">Background-Color 1</label>
+                                <div class="d-flex">
+                                    <input name="backColor1" type="text" class="form-control w-50"
+                                           id="inpBackColor">
+                                    <div class="ms-2"
+                                         style="height: 34px; width: 34px; border-radius: 100%; overflow: hidden; border: 1px solid rgba(21,72,158,0.41)">
+                                        <input type="color" class="form-control form-control-color"
+                                               id="inpBackColorPick" value="#c1c1c1" title="Choose your color">
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-md-6 col-lg-12 mb-3 mt-2 ">
+                                <label for="inpBackColor2" class="form-label">Background-Color 2</label>
+                                <div class="d-flex">
+                                    <input name="backColor2" type="text" class="form-control w-50"
+                                           id="inpBackColor2">
+                                    <div class="ms-2"
+                                         style="height: 34px; width: 34px; border-radius: 100%; overflow: hidden; border: 1px solid rgba(21,72,158,0.41)">
+                                        <input type="color" class="form-control form-control-color"
+                                               id="inpBackColorPick2" value="#000000" title="Choose your color">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-12 mb-3 mt-2 ">
+                                <label for="inpTextColor" class="form-label">Text-Color</label>
+                                <div class="d-flex">
+                                    <input name="textColor" type="text" class="form-control w-50" id="inpTextColor">
+                                    <div class="ms-2"
+                                         style="height: 34px; width: 34px; border-radius: 100%; overflow: hidden; border: 1px solid rgba(21,72,158,0.41)">
+                                        <input type="color" class="form-control form-control-color"
+                                               id="inpTextColorPick" value="#000000" title="Choose your color">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-12 mb-3 mt-2 ">
+                                <label for="inpLinkColor" class="form-label">Link-Color</label>
+                                <div class="d-flex">
+                                    <input name="linkColor" type="text" class="form-control w-50" id="inpLinkColor">
+                                    <div class="ms-2"
+                                         style="height: 34px; width: 34px; border-radius: 100%; overflow: hidden; border: 1px solid rgba(21,72,158,0.41)">
+                                        <input type="color" class="form-control form-control-color"
+                                               id="inpLinkColorPick" value="#ffffff" title="Choose your color">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div id="cardBodyImage" class="card-body px-5">
                         <div class="mt-4 d-flex justify-content-center">
@@ -1071,7 +1081,7 @@
             <section id="templateSection" class="mx-auto "></section>
             <button form="userDataForm" id="btnCopy" type="submit" class="btn" disabled>Copy Signature</button>
             <br>
-            <button form="userDataForm" id="btnSave" type="submit" class="btn d-none"  disabled>Save Signature</button>
+            <button form="userDataForm" id="btnSave" type="submit" class="btn d-none" disabled>Save Signature</button>
             <button id="btnUpdate" type="submit" class="btn" disabled>Update</button>
             <button id="btnDelete" type="button" class="btn">Delete</button>
             <br>
