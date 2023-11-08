@@ -510,6 +510,7 @@
                 color: white;
                 padding: 8px 12px;
                 cursor: pointer;
+                border-radius: 0;
             }
 
             #firstCol::-webkit-scrollbar {
@@ -636,6 +637,7 @@
                 color: white;
                 padding: 8px 12px;
                 cursor: pointer;
+                border-radius: 0;
             }
 
             #firstCol::-webkit-scrollbar {
@@ -734,6 +736,7 @@
                 color: white;
                 padding: 8px 12px;
                 cursor: pointer;
+                border-radius: 0;
             }
         }
 
@@ -800,6 +803,7 @@
                 color: white;
                 padding: 8px 12px;
                 cursor: pointer;
+                border-radius: 0;
             }
         }
 
@@ -878,6 +882,7 @@
                 color: white;
                 padding: 8px 12px;
                 cursor: pointer;
+                border-radius: 0;
             }
         }
     </style>
