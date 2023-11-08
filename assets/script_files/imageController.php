@@ -4,33 +4,35 @@
     })
 
     $("#file-input").change(function() {
-        var fileName = $(this).val().split("\\").pop();
-        alert("Selected file: " + fileName);
+        var fileInput = this;
+        var file = fileInput.files[0];
 
-        // Set the selected image to the <img> element
-        var fileInput = $(this)[0];
-        if (fileInput.files && fileInput.files[0]) {
-            var reader = new FileReader();
-            reader.onload = function(e) {
-                // $("#selected-image").attr("src", e.target.result);
-                // $("#selected-image").show(); // Show the image element
-                // $("#selected-image").css({
-                //     'background': 'url(' + e.target.result + ') center/cover no-repeat',
-                //
-                // });
-                console.log(e.target.result);
-                $('#image').val(e.target.result);
-                localStorage.setItem("recent-image",reader.result);
-                const url = localStorage.getItem("recent-image");
-                $("#selected-image").css({
-                    'background': 'url(' + url + ') center/cover no-repeat',
-                });
+        // Check if a file is selected
+        if (file) {
+            // Check the file size (in bytes)
+            if (file.size <= 2 * 1024 * 1024) { // 2MB limit
+                var fileName = file.name;
+                alert("Selected file: " + fileName);
 
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    var dataURL = e.target.result;
 
-            };
-            reader.readAsDataURL(fileInput.files[0]);
+                    // Save the data URL in localStorage
+                    localStorage.setItem("recent-image", dataURL);
+
+                    // Set the background of the "selected-image" element
+                    $("#selected-image").css({
+                        'background': 'url(' + dataURL + ') center/cover no-repeat',
+                    });
+                };
+                reader.readAsDataURL(file);
+            } else {
+                alert("File size exceeds the 2MB limit. Please select a smaller file.");
+                // Optionally clear the file input
+                $(this).val(""); // Clear the file input
+            }
         }
-
     });
 
     $("#slctFontFam").click(function () {
