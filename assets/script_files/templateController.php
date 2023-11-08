@@ -31,9 +31,6 @@ $conn->close();
 <script>
     function setValues() {
         $(document).ready(function () {
-
-            // $('#name').text(localStorage.setItem('inputText', 'Mark Mason'));
-
             var savedText = localStorage.getItem('inputText');
             var title = localStorage.getItem('title');
             var comName = localStorage.getItem('comName');
@@ -59,53 +56,64 @@ $conn->close();
             if (savedText !== null) {
                 $('#name').text(savedText);
             }else {
-                $('#name').text('Mark Mason');
+                $('#name').css("display", "none");
             }
             if (title !== null) {
                 $('#title').text(title);
-
             }else {
-
-                $('#title').text('Marketing Manager');
-
+                $('#title').css("display", "none");
             }
             if (comName !== null) {
                 $('#companyName').text(comName);
             }else {
-                $('#companyName').text('XYZ Corporation');
+                $('#companyName').css("display", "none");
             }
             if (email !== null) {
                 $('#email').text(email);
             }else {
-                $('#email').text('markmsn@gmail.com');
+                $('#email').css("display", "none");
             }
             if (mobileNo !== null) {
                 $('#mobileNo').text(mobileNo);
             }else {
-                $('#mobileNo').text('+1 (555) 987-6543');
+                $('#mobileNo').css("display", "none");
             }
             if (officeNo !== null) {
                 $('#officeNo').text(officeNo);
             }else {
-                $('#officeNo').text('+1 (555) 987-6543');
+                $('#officeNo').css("display", "none");
             }
             if (url !== null) {
                 $('#webUrl').text(url);
             }else {
-                $('#webUrl').text('www.xyzcorp.com');
+                $('#webUrl').css("display", "none");
             }
             if (address !== null) {
                 $('#address').text(address);
             }else {
-                $('#address').text('123 Main Street, Suite 456, Cityville');
+                $('#address').css("display", "none");
             }
 
-
-
-            $('#fbook').attr('href', facebook);
-            $('#linked').attr('href', linkedin);
-            $('#twi').attr('href', twitter);
-            $('#insta').attr('href', instagram);
+            if (facebook !== null) {
+                $('#fbook').attr('href', facebook);
+            }else {
+                $('#fbook').css("display","none");
+            }
+            if (linkedin !== null) {
+                $('#linked').attr('href', linkedin);
+            }else {
+                $('#linked').css("display","none");
+            }
+            if (twitter !== null) {
+                $('#twi').attr('href', twitter);
+            }else {
+                $('#twi').css("display","none");
+            }
+            if (instagram !== null) {
+                $('#insta').attr('href', instagram);
+            }else {
+                $('#insta').css("display","none");
+            }
 
             if(imgUrl=="" || imgUrl==null){
                 $("#selected-image").css({
@@ -143,16 +151,6 @@ $conn->close();
             $("#imgLinkedIn").attr("src", srcLinked);
             $("#imgFBook").attr("src", srcFBook);
             $("#imgInsta").attr("src", srcInsta);
-            // You can also call any necessary functions here
-            // localStorage.setItem('inputText', 'Mark Mason');
-            // localStorage.setItem('title', 'Marketing Manager');
-            // localStorage.setItem('comName', 'XYZ Corporation');
-            // localStorage.setItem('officeNo','1 (555) 123-4567');
-            // localStorage.setItem('mobileNo', '+1 (555) 987-6543');
-            // localStorage.setItem('url', 'www.xyzcorp.com');
-            // localStorage.setItem('email','markmsn@gmail.com' );
-            // localStorage.setItem('address','123 Main Street, Suite 456, Cityville' );
-
 
         });
     }
@@ -160,25 +158,27 @@ $conn->close();
     // small templates------------------------------------------------------------------------------------------------------
     $('#firstTemp').click(
         function () {
-
-
             $("#templateSection").load("assets/template/templateOne.php", function () {
                 $('#tempId').val('1');
-                // After loading the template, set values from local storage
-                setValues();
-            });
 
+                if (localStorage.length === 0) {
+                    defaultValues();
+                }else{
+                    setValues();
+                }
+            });
         }
     );
     $('#secondTemp').click(
         function () {
-
-
-
             $("#templateSection").load("assets/template/templateTwo.php", function () {
                 $('#tempId').val('2');
-                // After loading the template, set values from local storage
-                setValues();
+
+                if (localStorage.length === 0) {
+                    defaultValues();
+                }else{
+                    setValues();
+                }
             });
         }
     );
@@ -186,8 +186,12 @@ $conn->close();
         function () {
             $("#templateSection").load("assets/template/templateThree.php", function () {
                 $('#tempId').val('3');
-                // After loading the template, set values from local storage
-                setValues();
+
+                if (localStorage.length === 0) {
+                    defaultValues();
+                }else{
+                    setValues();
+                }
             });
 
         }
@@ -196,8 +200,12 @@ $conn->close();
         function () {
             $("#templateSection").load("assets/template/templateFour.php", function () {
                 $('#tempId').val('4');
-                // After loading the template, set values from local storage
-                setValues();
+
+                if (localStorage.length === 0) {
+                    defaultValues();
+                }else{
+                    setValues();
+                }
             });
 
         }
@@ -206,13 +214,29 @@ $conn->close();
         function () {
             $("#templateSection").load("assets/template/templateFive.php", function () {
                 $('#tempId').val('5');
-                // After loading the template, set values from local storage
-                setValues();
+
+                if (localStorage.length === 0) {
+                    defaultValues();
+                }else{
+                    setValues();
+                }
             });
 
         }
     );
 
+    function defaultValues(){
+        $('#name,#title,#companyName,#officeNo,#mobileNo,#webUrl,#email,#address,#fbook,#linked,#twi,#insta').css("display", "block");
+        $('#name').text("Mark Mason");
+        $('#title').text("Marketing Manager");
+        $('#companyName').text("XYZ Corporation");
+        $('#email').text("markmsn@gmail.com");
+        $('#mobileNo').text("+1 (555) 987-6543");
+        $('#officeNo').text("+1 (555) 123-4567");
+        $('#webUrl').text("www.xyzcorp.com");
+        $('#address').text("123 Main Street, Suite 456, Cityville");
+        $("#selected-image").css({'background': 'white'});
+    }
 
     //----------------------------------------------------------------------------------------------------------------------
 
@@ -556,6 +580,7 @@ $conn->close();
     $('#txtClearAll,#txtClearAllIcn').click(
         function () {
             clearInputValues();
+            $("#btnCopy").prop('disabled', true);
         }
     );
 
