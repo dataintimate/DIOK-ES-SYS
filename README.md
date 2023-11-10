@@ -49,14 +49,14 @@ DIOK-ES-SYS is a system for automating email signature generation. It streamline
             `templateImg text DEFAULT NULL`  
           )`ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;`
 
-<br>
+         
 
           `CREATE TABLE template` (
             `tempId int(11) Primary key,`  
             `templates text NOT NULL`  
           ) `ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;`
 
-<br> 
+       
 
 6. Create .env file in the root directory of the project.
 
@@ -99,8 +99,7 @@ Then use the copied signature in your preferred email client.
 <br>
 
 ## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
+This project is licensed under the [LICENSE.md](LICENSE.md) 
 
 
 
