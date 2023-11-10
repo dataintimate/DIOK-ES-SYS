@@ -76,19 +76,20 @@ select a template of your choice.
 
 Select the second tab and fill the necessary fields.  
 
-<img src="https://github.com/dataintimate/DIOK-ES-SYS/assets/126963748/fc816811-1a33-45f5-bb7e-490165f8077e" alt="App Screenshot" width="600" >
+<img src="https://github.com/dataintimate/DIOK-ES-SYS/assets/126963748/e5edbd84-ea91-42bc-92dc-3e022eba70ef" alt="App Screenshot" width="600" >
 
 <br><br>
 
 Next go to the third tab to stylize your signature.  
 
-<img src="https://github.com/dataintimate/DIOK-ES-SYS/assets/126963748/9ea4f289-80d4-4af7-b5d4-379db60e13c7" alt="App Screenshot" width="600" >
+<img src="https://github.com/dataintimate/DIOK-ES-SYS/assets/126963748/a11e81e6-1c57-4fac-8b33-077e97db418b" alt="App Screenshot" width="600" >
 
 <br><br>
 
+
 After styling the signature go to the fourth tab and upload an image of your choice.
 
-<img src="https://github.com/dataintimate/DIOK-ES-SYS/assets/126963748/0391db51-2e0f-41c8-b0c3-2dff6c71ea4d" alt="App Screenshot" width="600" >
+<img src="https://github.com/dataintimate/DIOK-ES-SYS/assets/126963748/88cb6506-7efe-4f32-a8a9-068904cccfbb" alt="App Screenshot" width="600" >
 
 <br><br>
 
