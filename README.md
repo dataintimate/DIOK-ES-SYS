@@ -99,7 +99,7 @@ Then use the copied signature in your preferred email client.
 <br>
 
 ## License
-This project is licensed under the [LICENSE.md](LICENSE) file.
+This project is licensed under MIT License.See the [LICENSE.md](LICENSE) file for details.
 
 
 
