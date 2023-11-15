@@ -1,5 +1,5 @@
 <?php
-$envFilePath = __DIR__ . '/../.env';
+$envFilePath = __DIR__ . '/../../.env';
 
 if (file_exists($envFilePath)) {
     // Read the contents of the .env file
