@@ -13,17 +13,19 @@
             if (file.size <= 2 * 1024 * 1024) { // 2MB limit
                 var fileName = file.name;
                 alert("Selected file: " + fileName);
-
+                 var tempFIle = fileName;
+                localStorage.setItem("image-file", fileName);
                 var reader = new FileReader();
                 reader.onload = function(e) {
                     var dataURL = e.target.result;
 
                     // Save the data URL in localStorage
                     localStorage.setItem("recent-image", dataURL);
+                    var folder = "../../db/image/" +fileName;
 
                     // Set the background of the "selected-image" element
                     $("#selected-image").css({
-                        'background': 'url(' + dataURL + ') center/cover no-repeat',
+                        'background': 'url('+dataURL+') center/cover no-repeat',
                     });
                 };
                 reader.readAsDataURL(file);
