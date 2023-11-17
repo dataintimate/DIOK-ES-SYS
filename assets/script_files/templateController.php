@@ -596,6 +596,11 @@ $conn->close();
     );
 
     function copyDivToClipboard() {
+        var imagePaths = localStorage.getItem('image-file');
+        $("#selected-image").css({
+            'background': 'url(db/image/'+imagePaths+') center/cover no-repeat',
+        });
+
         var range = document.createRange();
         range.selectNode(document.querySelector(".example"));
         window.getSelection().removeAllRanges(); // clear current selection
