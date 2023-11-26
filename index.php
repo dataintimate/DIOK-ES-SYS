@@ -1099,8 +1099,8 @@
             <br>
             <a class="clear" href="#"><i id="txtClearAllIcn" class="fa-solid fa-xmark fa-l p-1 mt-3"></i>
                 <p id="txtClearAll">Clear Input Fields</p></a><br>
-            <a class="" href="#"><p id="txtSavedSignatures">Saved Signatures</p></a>
-            <a class="" href="#"><p id="txtNewSignature">New Signature</p></a>
+          <a class="d-none" href="#"><p id="txtSavedSignatures">Saved Signatures</p></a>
+            <a class="d-none" href="#"><p id="txtNewSignature">New Signature</p></a>
             <div id="instructionsDiv"><p>Instructions</p></div>
             <div id="docDiv">
                 <i class="fa-regular fa-circle-xmark"></i>
