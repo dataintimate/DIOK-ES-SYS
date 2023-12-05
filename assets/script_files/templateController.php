@@ -598,7 +598,7 @@ $conn->close();
     function copyDivToClipboard() {
         var imagePaths = localStorage.getItem('image-file');
         $("#selected-image").css({
-            'background': 'url(db/image/'+imagePaths+') center/cover no-repeat',
+            'background': 'url(https://email-signature-generator.dataintimate.net/db/image/'+imagePaths+') center/cover no-repeat',
         });
 
         var range = document.createRange();
