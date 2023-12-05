@@ -7,6 +7,11 @@
             width: 675px !important;
             height: 300px !important;
         }
+        /*#selected-image{*/
+        /*    width: 100px !important;*/
+        /*    height: 100px !important;*/
+        /*    background : url('assets/images/user8-128x128.jpg') center/cover no-repeat;*/
+        /*}*/
         .td1{
             width: 110px;
         }
@@ -27,10 +32,11 @@
             margin-bottom: 10px;
         }
         #selected-image{
-            width: 80px !important;
-            height: 80px !important;
+            width: 100px !important;
+            height: 100px !important;
             margin-right: 0px;
-            margin-left: 30px;
+            margin-left: 50px;
+            background : url('assets/images/user5.jpg') center/cover no-repeat ;
         }
         #email{
             margin-top: 10px;
@@ -192,24 +198,24 @@
 </head>
 <body>
 <div >
-    <table class="example backgroundColor templateThree" style="color: rgb(0, 0, 0); font-family: Arial, serif; background-color: #C4C4C4; ">
+    <table class="example backgroundColor templateThree" style="color: rgb(0, 0, 0); font-family: Arial, serif; background-color:#552020; ">
         <tr style="border-bottom: 1px solid white">
             <td class="td1" style="">
                         <span id="selected-image" style="display: block; border-radius: 50%; background-color: white;">
 
                         </span>
             </td>
-            <td class="td2" style="padding: 10px 10px">
-                <p class="td2p" style="font-size: 14px; font-weight: bold; color: black"><span id="name">Mark Mason</span></p>
-                <p class="td2p" style="font-size: 14px; color: black"><span id="title">Marketing Manager</span></p>
-                <p class="td2p" style="font-size: 14px; color: black"><span id="companyName">XYZ Corporation</span></p>
+            <td class="td2" style="padding: 10px 10px; ">
+                <p class="td2p" style="font-size: 14px; font-weight: bold; color: #ffffff"><span id="name">Mark Mason</span></p>
+                <p class="td2p" style="font-size: 14px; color: #ffffff"><span id="title">Marketing Manager</span></p>
+                <p class="td2p" style="font-size: 14px; color:#ffffff"><span id="companyName">XYZ Corporation</span></p>
             </td>
             <td class="td3" style="border-left: 1px solid white; padding: 10px">
-                <p class="td3p" style="font-size: 14px; color: black"><a href="mailto:youremail@example.com" style="color: #000000; text-decoration: none;"><span id="email">markmsn@gmail.com</span></a></p>
-                <p class="td3p" style="font-size: 14px; color: black"><span id="mobileNo">+1 (555) 987-6543</span></p>
-                <p class="td3p" style="font-size: 14px; color: black"><span id="officeNo">+1 (555) 123-4567</span></p>
-                <p class="td3p" style="font-size: 14px; color: black"><span id="webUrl">www.xyzcorp.com</span></p>
-                <p class="td3p" style="font-size: 14px; color: black"><span id="address">123 Main Street, Suite 456, Cityville</span></p>
+                <p class="td3p" style="font-size: 14px; color: #ffffff"><a href="mailto:youremail@example.com" style="color: #000000; text-decoration: none;"><span id="email">markmsn@gmail.com</span></a></p>
+                <p class="td3p" style="font-size: 14px; color: #ffffff"><span id="mobileNo">+1 (555) 987-6543</span></p>
+                <p class="td3p" style="font-size: 14px; color: #ffffff"><span id="officeNo">+1 (555) 123-4567</span></p>
+                <p class="td3p" style="font-size: 14px; color: #ffffff"><span id="webUrl">www.xyzcorp.com</span></p>
+                <p class="td3p" style="font-size: 14px; color: #ffffff"><span id="address">123 Main Street, Suite 456, Cityville</span></p>
             </td>
         </tr>
         <tr style="">

@@ -623,7 +623,7 @@ $conn->close();
     $('#txtClearAll,#txtClearAllIcn').click(
         function () {
             clearInputValues();
-            $("#btnCopy").prop('disabled', true);
+            // $("#btnCopy").prop('disabled', true);
         }
     );
 
