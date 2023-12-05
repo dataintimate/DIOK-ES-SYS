@@ -213,7 +213,7 @@
     <table class="example" cellspacing="0" cellpadding="0" width="652px"
            style="font-family: Arial, sans-serif; border-collapse: collapse;">
         <tr>
-            <td class="" id="side" height="280px"  width="200px" style="background-color: #f5f4f4; padding: 7px">
+            <td class="backgroundColor2" id="side" height="280px"  width="200px" style="background-color: #f5f4f4; padding: 7px">
                <span id="selected-image" style="display: block; border-radius: 50%; margin: auto; ">
                </span>
             </td>
