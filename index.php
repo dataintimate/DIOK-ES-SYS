@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-     <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -22,6 +22,12 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="assets/fontawesome/css/all.css">
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+    <!--    tooltip library-->
+
+    <script src="https://unpkg.com/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6.3.4/dist/tippy-bundle.umd.min.js"></script>
+
 
     <style>
         * {
@@ -397,6 +403,20 @@
 
         #offNoValidLbl, #mobNoValidLbl, #mobNoLengthLbl, #offNoLengthLbl, #webValidLbl, #linkedValidLbl, #facebookValidLbl, #twitterValidLbl, #instagramValidLbl, #emailValidLbl {
             display: none;
+        }
+
+        [title]:hover:after {
+
+            padding: 50px !important;
+            color: #fff; /* Text color */
+            background-color: #007bff !important; /* Background color */
+            position: absolute;
+            z-index: 1;
+            bottom: 125%; /* Position above the element */
+            left: 50%;
+            margin-left: -100px; /* Adjust the position based on your preference */
+            border-radius: 5px; /* Rounded corners */
+            white-space: nowrap;
         }
 
         @media all and (max-width: 1200px) {
@@ -903,10 +923,12 @@
                 <div id="sideCard" class="card rounded-0 border border-0 ">
                     <div id="cardHead" class="card-header text-center rounded-0"
                          style="background: rgba(31, 54, 92, 1)">
-                        <i class="fa-solid fa-address-card  header-icon" id="icnTemp"></i>
-                        <i class="fa-solid fa-align-center header-icon" id="icnInput"></i>
-                        <i class="fa-solid fa-sliders header-icon" id="icnStyle"></i>
-                        <i class="fa-solid fa-image header-icon" id="icnImage"></i>
+
+                        <i class="fa-solid fa-address-card  header-icon" id="icnTemp"
+                           data-tippy-content="Templates"></i>
+                        <i class="far fa-edit  header-icon" id="icnInput" data-tippy-content="Edit"></i>
+                        <i class="fa-solid fa-palette header-icon" id="icnStyle" data-tippy-content="Colours"></i>
+                        <i class="fa-solid fa-image header-icon" id="icnImage" data-tippy-content="Image"></i>
                     </div>
                     <div id="cardBodyTemp" class="card-body">
                         <!--                        <h5 id="h5Temp" class="card-title mt-5">Templates</h5>-->
@@ -1001,18 +1023,18 @@
                                 <select name="fontFamily" id="slctFontFam" class="form-select"
                                         aria-label="Default select example">
                                     <option selected>Poppins</option>
-                                    <option >Roboto</option>
-                                    <option >Montserrat</option>
-                                    <option >Nunito</option>
-                                    <option >Rubik</option>
-                                    <option >Merriweather</option>
-                                    <option >Kanit</option>
-                                    <option >Lora</option>
-                                    <option >Work Sans</option>
-                                    <option >Inconsolata</option>
-                                    <option >Titillium Web</option>
-                                    <option >Josefin Sans</option>
-                                    <option >Archivo</option>
+                                    <option>Roboto</option>
+                                    <option>Montserrat</option>
+                                    <option>Nunito</option>
+                                    <option>Rubik</option>
+                                    <option>Merriweather</option>
+                                    <option>Kanit</option>
+                                    <option>Lora</option>
+                                    <option>Work Sans</option>
+                                    <option>Inconsolata</option>
+                                    <option>Titillium Web</option>
+                                    <option>Josefin Sans</option>
+                                    <option>Archivo</option>
                                 </select>
                             </div>
                             <div class="col-md-6 col-lg-12 mb-3 mt-2" style="position:relative">
@@ -1099,27 +1121,33 @@
             <br>
             <a class="clear" href="#"><i id="txtClearAllIcn" class="fa-solid fa-xmark fa-l p-1 mt-3"></i>
                 <p id="txtClearAll">Clear Input Fields</p></a><br>
-          <a class="d-none" href="#"><p id="txtSavedSignatures">Saved Signatures</p></a>
+            <a class="d-none" href="#"><p id="txtSavedSignatures">Saved Signatures</p></a>
             <a class="d-none" href="#"><p id="txtNewSignature">New Signature</p></a>
             <div id="instructionsDiv"><p>Instructions</p></div>
             <div id="docDiv">
                 <i class="fa-regular fa-circle-xmark"></i>
                 <h5>Instructions</h5>
                 <hr>
-                <p><b>Step 1 :</b> &nbsp;Click on <i class="fa-solid fa-address-card  header-icon"></i> to select a
+                <p><b>Step 1 :</b> &nbsp;Click on Template tab <i class="fa-solid fa-address-card  header-icon"
+                                                                  id="icnTemp" data-tippy-content="Templates"></i>
+                    to select a
                     template of your
                     choice. </p><br>
-                <p><b>Step 2 :</b> &nbsp;Select the secont tab <i class="fa-solid fa-align-center header-icon"></i> and
+                <p><b>Step 2 :</b> &nbsp;Select the Edit tab <i class="far fa-edit  header-icon" id="icnInput"
+                                                                data-tippy-content="Edit"></i>
+                    and
                     fill the
                     necessary fields such as name, title, company, email etc... &nbsp; Always make sure to provide valid
                     URLs and correct values or the signature won't work as intended. Name is a required field. All the
                     other fields are not required. You can fill only the fields you need.</p><br>
-                <p><b>Step 3 :</b> &nbsp;After filling necessary fields in the second tab go to the third tab <i
-                            class="fa-solid fa-sliders header-icon"></i> to stylize your signature.<br>You can change
+                <p><b>Step 3 :</b> &nbsp;After filling necessary fields in the Edit tab go to the Colours tab <i
+                            class="fa-solid fa-palette header-icon" id="icnStyle" data-tippy-content="Colours"></i>
+                    to stylize your signature.<br>You can change
                     properties like font-family, font-color, background-color, text-color and link color to make your
                     signature look better.</p><br>
-                <p><b>Step 4 :</b> &nbsp;After styling the signature go to the fourth tab <i
-                            class="fa-solid fa-image header-icon"></i> to add an image to the signature. Here you can
+                <p><b>Step 4 :</b> &nbsp;After styling the signature go to the Image tab <i
+                            class="fa-solid fa-image header-icon" id="icnImage" data-tippy-content="Image"></i>
+                    to add an image to the signature. Here you can
                     add an image of your preference under some guidelines.</p>
                 <p style="margin-bottom: 50px; margin-top: 40px; font-weight: normal"><strong>Congrats! <img width="30"
                                                                                                              height="30"
@@ -1147,6 +1175,13 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 <script src="assets/jquery/jquery-3.7.1.min.js"></script>
+
+<!--tooltip library Initialize-->
+<script>
+    tippy('[data-tippy-content]');
+
+</script>
+
 <!--<script src="assets/script_files/cardHeaderController.php"></script>
 <script src="assets/script_files/templateController.php"></script>
 <script src="assets/script_files/imageController.php"></script>-->
