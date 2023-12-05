@@ -5,7 +5,7 @@
     <style>
         .templateThree{
             width: 675px !important;
-            height: 300px !important;
+            height: 280px !important;
         }
         .td1{
             width: 110px;
@@ -21,10 +21,11 @@
             margin-bottom: 10px;
         }
         #selected-image{
-            width: 80px !important;
-            height: 80px !important;
+            width: 90px !important;
+            height: 90px !important;
             margin-right: 0px;
             margin-left: 30px;
+            background : url('assets/images/user12.jpg') center/cover no-repeat ;
         }
         #email{
             margin-top: 10px;
@@ -106,6 +107,9 @@
             }
         }
         @media all and (max-width: 450px){
+            #email{
+                margin-top: 5px !important;
+            }
             .templateThree{
                 width: 300px !important;
                 height: max-content !important;
@@ -130,7 +134,7 @@
                 width: 150px !important;
             }
             #s_mid_icons{
-                margin-bottom: 5px !important;
+                margin-bottom: 0px !important;
                 margin-top: 8px !important;
             }
             a>img{
@@ -173,7 +177,7 @@
                 width: 130px !important;
             }
             #s_mid_icons{
-                margin-bottom: 5px !important;
+                margin-bottom: 0px !important;
                 margin-top: 4px !important;
             }
             a>img{
@@ -190,49 +194,51 @@
             #td3Div{
                 margin-left: 0px;
             }
+            #email{
+                margin-top: 4px !important;
+            }
         }
     </style>
 </head>
 <body>
 <div >
-    <table class="example backgroundColor templateThree" style="color: rgb(0, 0, 0); font-family: Arial, serif; background-color: #C4C4C4; ">
+    <table class="example backgroundColor templateThree" style="color: rgb(0, 0, 0); font-family: Arial, serif; background-color: #ffebeb; ">
         <tr style="border-bottom: 1px solid white">
             <td class="td1" style="">
-                        <span id="selected-image" style="display: block; border-radius: 50%; background-color: white;">
-
-                        </span>
+                <span id="selected-image" style="display: block; border-radius: 50%; background-color: white;">
+                </span>
             </td>
             <td class="td2" style="padding: 10px 10px">
-                <p class="td2p" style="font-size: 14px; font-weight: bold; color: black"><span id="name">Mark Mason</span></p>
-                <p class="td2p" style="font-size: 14px; color: black"><span id="title">Marketing Manager</span></p>
-                <p class="td2p" style="font-size: 14px; color: black"><span id="companyName">XYZ Corporation</span></p>
+                <p class="td2p" style="font-size: 13px; font-weight: bold; color: #ff7a88"><span id="name">Mark Mason</span></p>
+                <p class="td2p" style="font-size: 13px; color: #ff7a88"><span id="title">Marketing Manager</span></p>
+                <p class="td2p" style="font-size: 13px; color: #ff7a88"><span id="companyName">XYZ Corporation</span></p>
                 <p class="td2BigP" id="s_mid_icons" style="display: flex; flex-direction: row; width: max-content; margin: auto;">
                     <a id="linked" href="" style=" margin-right: 7px; font-size: 0px; ">
                         <!--                            <img  width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/linkedin.png" alt="linkedin"/>-->
-                        <img id="imgLinkedIn" width="30" height="30" src="https://img.icons8.com/ios-filled/30/FFFFFF/linkedin.png" alt="linkedin"/>
+                        <img id="imgLinkedIn" width="30" height="30" src="https://img.icons8.com/ios-filled/30/f4a4a4/linkedin.png" alt="linkedin"/>
                     </a>
                     <a id="fbook" href="" style=" margin-right: 7px; font-size: 0px; ">
                         <!--                            <img id="imgFBook" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/facebook-new.png" alt="facebook-new"/>-->
-                        <img id="imgFBook" width="30" height="30" src="https://img.icons8.com/ios-filled/30/FFFFFF/facebook--v1.png" alt="facebook--v1"/>
+                        <img id="imgFBook" width="30" height="30" src="https://img.icons8.com/ios-filled/30/f4a4a4/facebook--v1.png" alt="facebook--v1"/>
                     </a>
                     <a id="twi" href="" style=" margin-right: 7px; font-size: 0px;">
                         <!--                            <img id="imgTwitter" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/twitter.png" alt="twitter"/>-->
-                        <img id="imgTwitter" width="30" height="30" src="https://img.icons8.com/ios-filled/30/FFFFFF/twitterx--v1.png" alt="twitterx--v1"/>
+                        <img id="imgTwitter" width="30" height="30" src="https://img.icons8.com/ios-filled/30/f4a4a4/twitterx--v1.png" alt="twitterx--v1"/>
                     </a>
                     <a id="insta" href="" style=" font-size: 0px;">
                         <!--                            <img id="imgInsta" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/instagram-new.png" alt="instagram-new"/>-->
-                        <img id="imgInsta" width="30" height="30" src="https://img.icons8.com/ios-filled/30/FFFFFF/instagram-new--v1.png" alt="instagram-new--v1"/>
+                        <img id="imgInsta" width="30" height="30" src="https://img.icons8.com/ios-filled/30/f4a4a4/instagram-new--v1.png" alt="instagram-new--v1"/>
                     </a>
                 </p>
             </td>
-            <td class="line" style="width: 1px; background-color: #000000; padding: 0;"></td>
+            <td class="line" style="width: 1px; background-color: #ff7a88; padding: 0;"></td>
             <td class="td3" style=" padding: 10px; text-align: left;">
                 <div id="td3Div">
-                    <p class="td3p" style="font-size: 14px; color: black"><a href="mailto:youremail@example.com" style="color: #000000; text-decoration: none;"><span id="email">markmsn@gmail.com</span></a></p>
-                    <p class="td3p" style="font-size: 14px; color: black"><span id="webUrl">www.xyzcorp.com</span></p>
-                    <p class="td3p" style="font-size: 14px; color: black"><span id="address">123 Main Street, Suite 456, Cityville</span></p>
-                    <p class="td3p" style="font-size: 14px; color: black"><span id="mobileNo">+1 (555) 987-6543</span></p>
-                    <p class="td3p td3Lastp"  style="font-size: 14px; color: black"><span id="officeNo">+1 (555) 123-4567</span></p>
+                    <p class="td3p" style=" color: black"><a href="mailto:" style="color: #ff7a88; text-decoration: none; font-size: 13px;"><span id="email">markmsn@gmail.com</span></a></p>
+                    <p class="td3p" style="font-size: 13px; "><a href="" style="font-size: 13px; color: #ff7a88"><span id="webUrl">www.xyzcorp.com</span></a></p>
+                    <p class="td3p" style="font-size: 13px; color: #ff7a88"><span id="address">123 Main Street, Suite 456, Cityville</span></p>
+                    <p class="td3p" style=""><a href="tel:" style="font-size: 13px; color: #ff7a88"><span id="mobileNo">+1 (555) 987-6543</span></a></p>
+                    <p class="td3p td3Lastp"  style=""><a href="tel:" style="font-size: 13px; color: #ff7a88;"><span id="officeNo">+1 (555) 123-4567</span></a></p>
                 </div>
             </td>
         </tr>
