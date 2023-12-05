@@ -185,7 +185,10 @@ $conn->close();
     // small templates------------------------------------------------------------------------------------------------------
     $('#firstTemp').click(
         function () {
+            $('#templateSection').addClass('skeleton-loader');
             $("#templateSection").load("assets/template/templateOne.php", function () {
+                $('#templateSection').removeClass('skeleton-loader');
+
                 $('#tempId').val('1');
 
                 if (localStorage.length === 0) {
@@ -985,6 +988,17 @@ $conn->close();
             });
         });
     }
+
+    //skeleton loader
+    const allSkeleton = document.querySelectorAll('.skelton')
+
+    window.addEventListener('load', function() {
+        $('#templateSection').removeClass('skeleton-loader');
+        allSkeleton.forEach(item=> {
+            item.classList.remove('skelton')
+
+        })
+    })
 
 
 </script>
