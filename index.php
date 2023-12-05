@@ -981,11 +981,11 @@
                 background-color: #f0f0f0; /* Light gray */
             }
         }
-        label{
-            position: relative;
-            top: 137px;
-            left: 79px;
-        }
+        /*label{*/
+        /*    position: relative;*/
+        /*    top: 137px;*/
+        /*    left: 79px;*/
+        /*}*/
         /* CSS for Paragraph Skeleton Loader */
         .skeleton-paragraph{
             position: relative;
