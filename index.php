@@ -178,10 +178,12 @@
             padding-right: 4px;
             margin-bottom: 10px;
             color: red;
+           font-size: 18px;
         }
 
         #txtClearAllIcn {
             color: red;
+            font-size: 18px;
         }
 
         #txtNewSignature {
@@ -979,7 +981,7 @@
                 background-color: #f0f0f0; /* Light gray */
             }
         }
-        label{
+        .label1{
             position: relative;
             top: 137px;
             left: 79px;
@@ -1032,20 +1034,20 @@
                         <!--                        <h5 id="h5Temp" class="card-title mt-5">Templates</h5>-->
                         <!--                        <h5 id="h5SavedTemp" class="card-title mt-5">Saved Templates</h5>-->
                         <div id="firstTemp" class="smTemp skelton">
-                            <label class="skeleton-paragraph">Template 01</label>
+                            <label class="skeleton-paragraph label1">Template 01</label>
                         </div>
 
                         <div id="secondTemp" class="smTemp skelton ">
-                            <label class="skeleton-paragraph">Template 02</label>
+                            <label class="skeleton-paragraph label1">Template 02</label>
                         </div>
                         <div id="thirdTemp" class="smTemp skelton ">
-                            <label class="skeleton-paragraph">Template 03</label>
+                            <label class="skeleton-paragraph label1">Template 03</label>
                         </div>
                         <div id="fourthTemp" class="smTemp skelton">
-                            <label class="skeleton-paragraph">Template 04</label>
+                            <label class="skeleton-paragraph label1">Template 04</label>
                         </div>
                         <div id="fifthTemp" class="smTemp skelton">
-                            <label class="skeleton-paragraph">Template 05</label>
+                            <label class="skeleton-paragraph label1">Template 05</label>
                         </div>
                     </div>
                     <div id="cardBodyInput" class="card-body px-5">
