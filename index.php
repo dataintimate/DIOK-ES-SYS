@@ -178,12 +178,12 @@
             padding-right: 4px;
             margin-bottom: 10px;
             color: red;
-           font-size: 14px;
+           font-size: 15px;
         }
 
         #txtClearAllIcn {
             color: red;
-            font-size: 18px;
+            font-size: 15px;
         }
 
         #txtNewSignature {
