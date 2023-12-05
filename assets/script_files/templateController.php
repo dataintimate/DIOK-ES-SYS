@@ -185,7 +185,10 @@ $conn->close();
     // small templates------------------------------------------------------------------------------------------------------
     $('#firstTemp').click(
         function () {
+            $('#templateSection').addClass('skeleton-loader');
             $("#templateSection").load("assets/template/templateOne.php", function () {
+                $('#templateSection').removeClass('skeleton-loader');
+
                 $('#tempId').val('1');
 
                 if (localStorage.length === 0) {
@@ -198,7 +201,9 @@ $conn->close();
     );
     $('#secondTemp').click(
         function () {
+            $('#templateSection').addClass('skeleton-loader');
             $("#templateSection").load("assets/template/templateTwo.php", function () {
+                $('#templateSection').removeClass('skeleton-loader');
                 $('#tempId').val('2');
 
                 if (localStorage.length === 0) {
@@ -211,7 +216,9 @@ $conn->close();
     );
     $('#thirdTemp').click(
         function () {
+            $('#templateSection').addClass('skeleton-loader');
             $("#templateSection").load("assets/template/templateThree.php", function () {
+                $('#templateSection').removeClass('skeleton-loader');
                 $('#tempId').val('3');
 
                 if (localStorage.length === 0) {
@@ -225,7 +232,9 @@ $conn->close();
     );
     $('#fourthTemp').click(
         function () {
+            $('#templateSection').addClass('skeleton-loader');
             $("#templateSection").load("assets/template/templateFour.php", function () {
+                $('#templateSection').removeClass('skeleton-loader');
                 $('#tempId').val('4');
 
                 if (localStorage.length === 0) {
@@ -239,7 +248,9 @@ $conn->close();
     );
     $('#fifthTemp').click(
         function () {
+            $('#templateSection').addClass('skeleton-loader');
             $("#templateSection").load("assets/template/templateFive.php", function () {
+                $('#templateSection').removeClass('skeleton-loader');
                 $('#tempId').val('5');
 
                 if (localStorage.length === 0) {
@@ -985,6 +996,24 @@ $conn->close();
             });
         });
     }
+
+    //skeleton loader
+    const allSkeleton = document.querySelectorAll('.skelton')
+    const nodeListOf = document.querySelectorAll('label');
+    window.addEventListener('load', function() {
+        $('#templateSection').removeClass('skeleton-loader');
+
+
+
+        allSkeleton.forEach(item=> {
+            item.classList.remove('skelton')
+
+
+        })
+        nodeListOf.forEach(item1=>{
+            item1.classList.remove('skeleton-paragraph')
+        })
+    })
 
 
 </script>
