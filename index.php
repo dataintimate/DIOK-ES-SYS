@@ -892,6 +892,74 @@
                 border-radius: 0;
             }
         }
+        .skelton {
+            /*width: 270px;*/
+            /*height: 135px;*/
+            /*!*box-shadow: 0 -1px 8px 2px rgba(0, 0, 0, 0.14);*!*/
+            /*margin-bottom: 45px;*/
+            position: relative;
+
+        }
+        .skelton::before{
+
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            background-size: 200%;
+
+            background: linear-gradient(90deg, #e7e6e6, #f9f9f9, #e7e6e6);
+            animation: skeleton 5s infinite reverse;
+        }
+
+
+        .skelton:first-of-type {
+            margin-top: 35px;
+        }
+
+        .skelton:last-of-type {
+            margin-bottom: 60px;
+        }
+
+        @keyframes skeleton {
+            0% {
+                background-position: -100% 0;
+            }
+            100% {
+                background-position: 100% 0;
+            }
+        }
+        /* CSS for Skeleton Loader */
+        .skeleton-loader {
+            position: relative;
+        }
+        .skeleton-loader::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+                     z-index: 5;
+            border-radius: 4px;
+            animation: loading 1.5s infinite ease-in-out;
+        }
+
+        @keyframes loading {
+            0% {
+                background-color: #f0f0f0; /* Light gray */
+            }
+            50% {
+                background-color: #e0e0e0; /* Slightly darker gray */
+            }
+            100% {
+                background-color: #f0f0f0; /* Light gray */
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -911,11 +979,11 @@
                     <div id="cardBodyTemp" class="card-body">
                         <!--                        <h5 id="h5Temp" class="card-title mt-5">Templates</h5>-->
                         <!--                        <h5 id="h5SavedTemp" class="card-title mt-5">Saved Templates</h5>-->
-                        <div id="firstTemp" class="smTemp"></div>
-                        <div id="secondTemp" class="smTemp "></div>
-                        <div id="thirdTemp" class="smTemp "></div>
-                        <div id="fourthTemp" class="smTemp"></div>
-                        <div id="fifthTemp" class="smTemp"></div>
+                        <div id="firstTemp" class="smTemp skelton"></div>
+                        <div id="secondTemp" class="smTemp skelton "></div>
+                        <div id="thirdTemp" class="smTemp skelton "></div>
+                        <div id="fourthTemp" class="smTemp skelton"></div>
+                        <div id="fifthTemp" class="smTemp skelton"></div>
                     </div>
                     <div id="cardBodyInput" class="card-body px-5">
                         <div class="row">
@@ -1090,7 +1158,7 @@
             </form>
         </div>
         <div class="col text-center" id="secondCol">
-            <section id="templateSection" class="mx-auto "></section>
+            <section id="templateSection" class="mx-auto  skelton skeleton-loader"></section>
             <button form="userDataForm" id="btnCopy" type="submit" class="btn" disabled>Copy Signature</button>
             <br>
             <button form="userDataForm" id="btnSave" type="submit" class="btn d-none" disabled>Save Signature</button>
