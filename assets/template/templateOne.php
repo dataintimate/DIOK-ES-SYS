@@ -4,11 +4,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         p{
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
         #selected-image{
             width: 100px !important;
             height: 100px !important;
+            background : url('assets/images/user1.jpg') center/cover no-repeat;
         }
         a>img{
             margin-bottom: 15px;
@@ -168,38 +169,39 @@
 </head>
 <body>
 <div>
-    <table class="example" cellspacing="0" cellpadding="0" width="675px"
+    <table class="example" cellspacing="0" cellpadding="0" width="650px"
            style="font-family: Arial, sans-serif; border-collapse: collapse;">
         <tr>
-            <td class="backgroundColor2" id="side" height="250px"  width="200px" style="background-color: #000000; padding: 7px">
-               <span id="selected-image" style="display: block; border-radius: 50%; background-color: white; margin: auto">
+            <td class="" id="side" height="280px"  width="200px" style="background-color: #f5f4f4; padding: 7px">
+               <span id="selected-image" style="display: block; border-radius: 50%; margin: auto; ">
 
                </span>
             </td>
-            <td class="backgroundColor td2" style="position:relative; background-color: #c1c1c1; text-align: left; width: 500px; padding: 10px; padding-left: 30px">
-                <p class="td2p" id="td2pFirst" style="font-size: 14px; font-weight: bold; color: black"><span id="name">Mark Mason</span></p>
-                <p class="td2p" style="font-size: 14px; color: black"><span id="title">Marketing Manager</span></p>
-                <p class="td2p" style="font-size: 14px; color: black"><span id="companyName">XYZ Corporation</span></p>
-                <p class="td2p"  style="font-size: 14px; color: black"><span id="address">123 Main Street, Suite 456, Cityville</span></p>
-                <p class="td2p" style="font-size: 14px; color: black"><a href="mailto:youremail@example.com" style="color: #000000; text-decoration: none;"><span id="email">markmsn@gmail.com</span></a></p>
-                <p class="td2p" style="font-size: 14px; color: black"><span id="mobileNo">+1 (555) 987-6543</span></p>
-                <p class="td2p" style="font-size: 14px; color: black"><span id="officeNo">+1 (555) 123-4567</span></p>
-                <p class="td2p" id="td2pLast" style="font-size: 14px; color: black"><span id="webUrl">www.xyzcorp.com</span></p>
+            <td class="line" style="width: 1px; background-color: #7f5c5c; padding: 0;"></td>
+            <td class="backgroundColor td2" style="position:relative; background-color: #f5f4f4; text-align: left; width: 500px; padding: 10px; padding-left: 30px">
+                <p class="td2p" id="td2pFirst" style="font-size: 13px; font-weight: bold; color: #7f5c5c;"><span id="name">Mark Mason</span></p>
+                <p class="td2p" style="font-size: 13px; color: #7f5c5c;"><span id="title">Marketing Manager</span></p>
+                <p class="td2p" style="font-size: 13px; color: #7f5c5c;"><span id="companyName">XYZ Corporation</span></p>
+                <p class="td2p"  style="font-size: 13px; color: #7f5c5c;"><span id="address">123 Main Street, Suite 456, Cityville</span></p>
+                <p class="td2p" style=""><a href="mailto:" style="color: #7f5c5c;; text-decoration: none; font-size: 13px;"><span id="email">markmsn@gmail.com</span></a></p>
+                <p class="td2p" style="font-size: 13px; color: #7f5c5c;"><span id="mobileNo">+1 (555) 987-6543</span></p>
+                <p class="td2p" style="font-size: 13px; color: #7f5c5c;"><span id="officeNo">+1 (555) 123-4567</span></p>
+                <p class="td2p" id="td2pLast" style=""><a style="font-size: 14px; color: #7f5c5c;" href="" target="_blank"><span id="webUrl">www.xyzcorp.com</span></a></p>
             </td>
-            <td id="mid" class="backgroundColor"  style="background-color:#c1c1c1; width: 50px;">
+            <td id="mid" class="backgroundColor"  style="background-color:#f5f4f4; width: 100px;">
                 <div style="display: flex; flex-direction: column; padding: 10px; gap: 10px;">
                     <p style="display:grid; margin: 0px;">
                         <a id="linked" href="" style=" margin-right: 7px; font-size: 0px; ">
-                            <img id="imgLinkedIn" width="30" height="30" src="https://img.icons8.com/ios-filled/30/FFFFFF/linkedin.png" alt="linkedin"/>
+                            <img id="imgLinkedIn" width="30" height="30" src="https://img.icons8.com/ios-filled/30/907474/linkedin.png" alt="linkedin"/>
                         </a>
                         <a id="fbook" href="" style=" margin-right: 7px; font-size: 0px; ">
-                            <img id="imgFBook" width="30" height="30" src="https://img.icons8.com/ios-filled/30/FFFFFF/facebook--v1.png" alt="facebook--v1"/>
+                            <img id="imgFBook" width="30" height="30" src="https://img.icons8.com/ios-filled/30/907474/facebook--v1.png" alt="facebook--v1"/>
                         </a>
                         <a id="twi" href="" style=" margin-right: 7px; font-size: 0px;">
-                            <img id="imgTwitter" width="30" height="30" src="https://img.icons8.com/ios-filled/30/FFFFFF/twitterx--v1.png" alt="twitterx--v1"/>
+                            <img id="imgTwitter" width="30" height="30" src="https://img.icons8.com/ios-filled/30/907474/twitterx--v1.png" alt="twitterx--v1"/>
                         </a>
                         <a id="insta" href="" style=" font-size: 0px; margin-right: 7px">
-                            <img id="imgInsta" width="30" height="30" src="https://img.icons8.com/ios-filled/30/FFFFFF/instagram-new--v1.png" alt="instagram-new--v1"/>
+                            <img id="imgInsta" width="30" height="30" src="https://img.icons8.com/ios-filled/30/907474/instagram-new--v1.png" alt="instagram-new--v1"/>
                         </a>
                     </p>
                 </div>

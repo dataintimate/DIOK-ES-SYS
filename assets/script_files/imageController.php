@@ -25,6 +25,7 @@
 
                     // Set the background of the "selected-image" element
                     $("#selected-image").css({
+                        'background': 'url('+""+') center/cover no-repeat',
                         'background': 'url('+dataURL+') center/cover no-repeat',
                     });
                 };
