@@ -959,6 +959,11 @@
                 background-color: #f0f0f0; /* Light gray */
             }
         }
+        label{
+            position: relative;
+            top: 137px;
+            left: 79px;
+        }
 
     </style>
 </head>
@@ -979,11 +984,22 @@
                     <div id="cardBodyTemp" class="card-body">
                         <!--                        <h5 id="h5Temp" class="card-title mt-5">Templates</h5>-->
                         <!--                        <h5 id="h5SavedTemp" class="card-title mt-5">Saved Templates</h5>-->
-                        <div id="firstTemp" class="smTemp skelton"></div>
-                        <div id="secondTemp" class="smTemp skelton "></div>
-                        <div id="thirdTemp" class="smTemp skelton "></div>
-                        <div id="fourthTemp" class="smTemp skelton"></div>
-                        <div id="fifthTemp" class="smTemp skelton"></div>
+                        <div id="firstTemp" class="smTemp skelton">
+                            <label>Template 01</label>
+                        </div>
+
+                        <div id="secondTemp" class="smTemp skelton ">
+                            <label>Template 02</label>
+                        </div>
+                        <div id="thirdTemp" class="smTemp skelton ">
+                            <label>Template 03</label>
+                        </div>
+                        <div id="fourthTemp" class="smTemp skelton">
+                            <label>Template 04</label>
+                        </div>
+                        <div id="fifthTemp" class="smTemp skelton">
+                            <label>Template 05</label>
+                        </div>
                     </div>
                     <div id="cardBodyInput" class="card-body px-5">
                         <div class="row">
