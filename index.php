@@ -178,7 +178,7 @@
             padding-right: 4px;
             margin-bottom: 10px;
             color: red;
-           font-size: 18px;
+           font-size: 14px;
         }
 
         #txtClearAllIcn {
@@ -1225,7 +1225,6 @@
         <div class="col text-center" id="secondCol">
             <section id="templateSection" class="mx-auto  skelton skeleton-loader"></section>
             <button form="userDataForm" id="btnCopy" type="submit" class="btn" >Copy Signature</button>
-            <br>
             <button form="userDataForm" id="btnSave" type="submit" class="btn d-none" disabled>Save Signature</button>
             <button id="btnUpdate" type="submit" class="btn" disabled>Update</button>
             <button id="btnDelete" type="button" class="btn">Delete</button>
