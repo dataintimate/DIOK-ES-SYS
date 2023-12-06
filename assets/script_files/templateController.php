@@ -609,57 +609,38 @@ $conn->close();
         function () {
             if (($("#Name").val() === "")) {
 
-                $('#nameValidLbl').css("display", "block");
+                Swal.fire({
+                    title: 'Name is a required field..!',
+                    icon: 'warning',
+                    showCancelButton: false,  // This will hide the "Cancel" button
+                    showConfirmButton: false,  // This will hide the "OK" button
+                    timer: 2000,
+                    iconColor: 'red',
+                    customClass: {
+                        title: 'custom-title-color', // Define a custom class for the title
+                    }
+                });
+
+
+                // $('#nameValidLbl').css("display", "block");
             }else{
                 // alert
-                // Swal.fire({
-                //     title: 'Template Saved..!',
-                //     icon: 'success',
-                //     showCancelButton: false,  // This will hide the "Cancel" button
-                //     showConfirmButton: false,  // This will hide the "OK" button
-                //     timer: 1000,
-                //     iconColor: '#4CAF50',
-                //     customClass: {
-                //         title: 'custom-title-color', // Define a custom class for the title
-                //     }
-                // });
+                Swal.fire({
+                    title: 'Template Copied..!',
+                    icon: 'success',
+                    showCancelButton: false,  // This will hide the "Cancel" button
+                    showConfirmButton: false,  // This will hide the "OK" button
+                    timer: 2000,
+                    iconColor: '#4CAF50',
+                    customClass: {
+                        title: 'custom-title-color', // Define a custom class for the title
+                    }
+                });
 
                 $('#nameValidLbl').css("display", "none");
                 copyDivToClipboard();
                 $('#btnCopy').text("Copied");
                 $('#btnCopy').css("background-color", "#5891e8");
-
-                var formData = $("#userDataForm").serialize();
-                // formData += '&imgName=' + imgName;
-                // Make an AJAX request to send the form data
-                $.ajax({
-                    type: "POST",
-                    url: "db/db.php", // Replace with the URL of your PHP script
-                    data: formData,
-                    success: function (response) {
-                        // Handle the server response here
-                        // alert("Data Save successfully!");
-                        Swal.fire({
-                            title: 'Template Copy and Saved..!',
-                            icon: 'success',
-                            showCancelButton: false,  // This will hide the "Cancel" button
-                            showConfirmButton: false,  // This will hide the "OK" button
-                            timer: 1000,
-                            iconColor: '#4CAF50',
-                            customClass: {
-                                title: 'custom-title-color', // Define a custom class for the title
-                            }
-                        });
-                        // location.reload();
-                    },
-                    error: function () {
-                        // Handle errors here
-                        alert("Failed to save data.");
-                    }
-                });
-
-
-
                 setTimeout(function () {
                     $('#btnCopy').text("Copy Signature");
                     $('#btnCopy').css("background-color", "#1F365C");
