@@ -667,7 +667,7 @@ $conn->close();
                         // Handle the server response here
                         // alert("Data Save successfully!");
                         Swal.fire({
-                            title: 'Template Copy and Saved..!',
+                            title: 'Template Copied..!',
                             icon: 'success',
                             showCancelButton: false,  // This will hide the "Cancel" button
                             showConfirmButton: false,  // This will hide the "OK" button
