@@ -106,7 +106,7 @@ if (file_put_contents($filename1, $image_data)) {
     if (file_exists($fileToDelete)) {
         if (unlink($fileToDelete)) {
             echo $filename;
-            header("Location: ../index.php?save=success");
+
         } else {
             echo "Failed to delete the file.";
         }

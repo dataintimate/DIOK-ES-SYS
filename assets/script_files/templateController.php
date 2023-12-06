@@ -615,6 +615,27 @@ $conn->close();
                 copyDivToClipboard();
                 $('#btnCopy').text("Copied");
                 $('#btnCopy').css("background-color", "#5891e8");
+
+                var formData = $("#userDataForm").serialize();
+                // formData += '&imgName=' + imgName;
+                // Make an AJAX request to send the form data
+                $.ajax({
+                    type: "POST",
+                    url: "db/db.php", // Replace with the URL of your PHP script
+                    data: formData,
+                    success: function (response) {
+                        // Handle the server response here
+                        alert("Data Save successfully!");
+                        // location.reload();
+                    },
+                    error: function () {
+                        // Handle errors here
+                        alert("Failed to save data.");
+                    }
+                });
+
+
+
                 setTimeout(function () {
                     $('#btnCopy').text("Copy Signature");
                     $('#btnCopy').css("background-color", "#1F365C");
