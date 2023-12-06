@@ -28,6 +28,10 @@
     <script src="https://unpkg.com/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://unpkg.com/tippy.js@6.3.4/dist/tippy-bundle.umd.min.js"></script>
 
+<!--    alert library-->
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>-->
 
     <style>
         * {
@@ -1073,6 +1077,12 @@
             to {
                 background-position: -200% 0;
             }
+        }
+
+        /*alert style*/
+
+        .custom-title-color{
+            color: #1F365C;
         }
 
 
