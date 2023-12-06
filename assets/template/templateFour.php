@@ -5,7 +5,7 @@
     <style>
 
         hr{
-            background-color: #15489e !important;
+            background-color: #34455b !important;
         }
         .td1p{
             margin-bottom: 0px;
@@ -161,7 +161,7 @@
     <table class="example" cellspacing="0" cellpadding="0" width="675px"
            style="font-family: Arial, sans-serif; border-collapse: collapse; border-radius: 10px;">
         <tr>
-            <td class="backgroundColor2" style="background-color: #1F365C"  >
+            <td class="backgroundColor2" style="background-color: #ad4848"  >
                 <p style="display:grid; margin: 0 0 0 2px; ">
                     <a id="linked" href="" style=" margin-top: 7px; font-size: 0px; ">
                         <img  id="imgLinkedIn" width="20" height="20" src="https://img.icons8.com/ios-filled/30/FFFFFF/linkedin.png" alt="linkedin"/>
@@ -178,29 +178,29 @@
                 </p>
             </td>
 
-            <td  align="center" class="backgroundColor2 td1p" id="side" height="250px"  width="150px" style="background-color:  #1F365C; padding: 10px;   ">
+            <td  align="center" class="backgroundColor2 td1p" id="side" height="250px"  width="150px" style="background-color:  #ad4848; padding: 10px;   ">
                <span  id="selected-image" style="display: block; border-radius: 50%; background-color: white;">
                </span>
 
 
             </td>
 <!--            <td class="line" style="width: 1px; background-color: #000000"></td>-->
-            <td class="backgroundColor td2" style="position:relative; background-color: #ffffff; text-align: left; width: 500px; padding: 10px; vertical-align: top">
+            <td class="backgroundColor td2" style="position:relative; background-color: #f7bbbb; text-align: left; width: 500px; padding: 10px; vertical-align: top">
                 <div id="td2div">
 
-                        <p class="td2p" id="td2pFirst" style="font-size: 14px; font-weight: bold; color: black"><span id="name">Mark Mason</span></p>
-                        <p class="td2p" style="font-size: 14px; color: black"><span id="title">Marketing Manager</span></p>
+                        <p class="td2p" id="td2pFirst" style="font-size: 14px; font-weight: bold; color: #34455b"><span id="name">Mark Mason</span></p>
+                        <p class="td2p" style="font-size: 14px; color: #34455b"><span id="title">Marketing Manager</span></p>
 
 
 
-                   <hr style="height: 1px">
+                   <hr class="line" style="height: 1px">
 
-                    <p class="td2p" style="font-size: 14px; color: black"><span id="companyName">XYZ Corporation</span></p>
-                    <p class="td2p" style="font-size: 14px; color: black"><a href="mailto:youremail@example.com" style="color: #1F365C; text-decoration: none;"><span id="email">markmsn@gmail.com</span></a></p>
-                    <p class="td2p" style="font-size: 14px; color: black"><span id="address">123 Main Street, Suite 456, Cityville</span></p>
-                    <p class="td2p" style="font-size: 14px; color: black"><span id="mobileNo">+1 (555) 987-6543</span></p>
-                    <p class="td2p" id="td2pLast" style="font-size: 14px; color: black"><span id="officeNo">+1 (555) 123-4567</span></p>
-                    <p class="td2p" style="font-size: 14px; color: black; margin-top: 10px"><span id="webUrl">www.xyzcorp.com</span></p>
+                    <p class="td2p" style="font-size: 13px; color: #34455b"><span id="companyName">XYZ Corporation</span></p>
+                    <p class="td2p" style="font-size: 13px;"><a id="emailAnc" href="mailto:youremail@example.com" style="color: #34455b; text-decoration: none;"><span id="email">markmsn@gmail.com</span></a></p>
+                    <p class="td2p" style="font-size: 13px; color: #34455b"><span id="address">123 Main Street, Suite 456, Cityville</span></p>
+                    <p class="td2p" style="font-size: 13px;"><a id="mobNoAnc" href="tel:" style="font-size: 13px; color: #34455b"><span id="mobileNo">+1 (555) 987-6543</span></a></p>
+                    <p class="td2p" id="td2pLast" style="font-size: 13px;"><a id="offNoAnc" href="tel:" style="font-size: 13px; color: #34455b"><span id="officeNo">+1 (555) 123-4567</span></a></p>
+                    <p class="td2p" style="font-size: 13px; margin-top: 10px"><a id="webUrlAnc" href="" style="font-size: 13px; color: #34455b"><span id="webUrl">www.xyzcorp.com</span></a></p>
                     <!--                <p id="s_mid_icsons" style="display: flex; flex-direction: row; width: max-content; margin: auto">-->
                     <!--                    <a id="linked" href="" style=" margin-right: 7px; font-size: 0px; ">-->
                     <!--                        <img id="imgLinkedIn" width="30" height="30" src="https://img.icons8.com/ios-filled/30/FFFFFF/linkedin.png" alt="linkedin"/>-->

@@ -97,21 +97,25 @@ $conn->close();
             }
             if (email !== null) {
                 $('#email').text(email);
+                $('#emailAnc').attr('href', "mailto:"+email);
             }else {
                 $('#email').css("display", "none");
             }
             if (mobileNo !== null) {
                 $('#mobileNo').text(mobileNo);
+                $('#mobNoAnc').attr('href', "tel:"+mobileNo);
             }else {
                 $('#mobileNo').css("display", "none");
             }
             if (officeNo !== null) {
                 $('#officeNo').text(officeNo);
+                $('#offNoAnc').attr('href', "tel:"+officeNo);
             }else {
                 $('#officeNo').css("display", "none");
             }
             if (url !== null) {
                 $('#webUrl').text(url);
+                $('#webUrlAnc').attr('href', url);
             }else {
                 $('#webUrl').css("display", "none");
             }
@@ -159,6 +163,9 @@ $conn->close();
             })
             $("#name,#title,#companyName,#email,#address,#mobileNo,#officeNo,#webUrl").css({
                 'color': textColor
+            })
+            $(".line").css({
+                'background-color': textColor
             })
             $(".backgroundColor").css({
                 'background-color': backColor1
@@ -323,6 +330,7 @@ $conn->close();
                         $('#offNoLengthLbl').css("display", "block");
                     } else {
                         $('#offNoLengthLbl').css("display", "none");
+                        $('#offNoAnc').attr('href', "tel:"+value);
                     }
                 } else {
                     $('#OfficeNo').css("color", "red");
@@ -358,6 +366,7 @@ $conn->close();
                         $('#mobNoLengthLbl').css("display", "block");
                     } else {
                         $('#mobNoLengthLbl').css("display", "none");
+                        $('#mobNoAnc').attr('href', "tel:"+value);
                     }
                 } else {
                     $('#mobileBo').css("color", "red");
@@ -388,6 +397,7 @@ $conn->close();
                 if (urlRegex.test(value)) {
                     $('#url').css("color", "black");
                     $('#webValidLbl').css("display", "none");
+                    $('#webUrlAnc').attr('href', value);
                 } else {
                     $('#url').css("color", "red");
                     $('#webValidLbl').css("display", "block");
@@ -411,6 +421,7 @@ $conn->close();
                 if (emailRegex.test(value)) {
                     $('#Email').css("color", "black");
                     $('#emailValidLbl').css("display", "none");
+                    $('#emailAnc').attr('href', "mailto:"+value);
                 } else {
                     $('#Email').css("color", "red");
                     $('#emailValidLbl').css("display", "block");

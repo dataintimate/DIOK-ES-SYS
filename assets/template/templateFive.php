@@ -234,11 +234,11 @@
             <td class="line" style="width: 1px; background-color: #ff7a88; padding: 0;"></td>
             <td class="td3" style=" padding: 10px; text-align: left;">
                 <div id="td3Div">
-                    <p class="td3p" style=" color: black"><a href="mailto:" style="color: #ff7a88; text-decoration: none; font-size: 13px;"><span id="email">markmsn@gmail.com</span></a></p>
-                    <p class="td3p" style="font-size: 13px; "><a href="" style="font-size: 13px; color: #ff7a88"><span id="webUrl">www.xyzcorp.com</span></a></p>
+                    <p class="td3p" style=" color: black"><a id="emailAnc" href="mailto:" style="color: #ff7a88; text-decoration: none; font-size: 13px;"><span id="email">markmsn@gmail.com</span></a></p>
+                    <p class="td3p" style="font-size: 13px; "><a id="webUrlAnc" href="" style="font-size: 13px; color: #ff7a88"><span id="webUrl">www.xyzcorp.com</span></a></p>
                     <p class="td3p" style="font-size: 13px; color: #ff7a88"><span id="address">123 Main Street, Suite 456, Cityville</span></p>
-                    <p class="td3p" style=""><a href="tel:" style="font-size: 13px; color: #ff7a88"><span id="mobileNo">+1 (555) 987-6543</span></a></p>
-                    <p class="td3p td3Lastp"  style=""><a href="tel:" style="font-size: 13px; color: #ff7a88;"><span id="officeNo">+1 (555) 123-4567</span></a></p>
+                    <p class="td3p" style=""><a id="mobNoAnc" href="tel:" style="font-size: 13px; color: #ff7a88"><span id="mobileNo">+1 (555) 987-6543</span></a></p>
+                    <p class="td3p td3Lastp"  style=""><a id="offNoAnc" href="tel:" style="font-size: 13px; color: #ff7a88;"><span id="officeNo">+1 (555) 123-4567</span></a></p>
                 </div>
             </td>
         </tr>

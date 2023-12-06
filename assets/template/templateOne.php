@@ -223,10 +223,10 @@
                 <p class="td2p" style="font-size: 13px; color: #7f5c5c;"><span id="title">Marketing Manager</span></p>
                 <p class="td2p" style="font-size: 13px; color: #7f5c5c;"><span id="companyName">XYZ Corporation</span></p>
                 <p class="td2p"  style="font-size: 13px; color: #7f5c5c; margin-bottom: 3px;"><span id="address">123 Main Street, Suite 456, Cityville</span></p>
-                <p class="td2p" style=""><a href="mailto:" style="color: #7f5c5c; text-decoration: none; font-size: 13px;"><span id="email">markmsn@gmail.com</span></a></p>
-                <p class="td2p" style="font-size: 13px; color: #7f5c5c;"><a style="font-size: 13px; color: #7f5c5c;" href="tel:"><span id="mobileNo">+1 (555) 987-6543</span></a></p>
-                <p class="td2p" style="font-size: 13px; color: #7f5c5c; margin-bottom: 3px;"><a style="font-size: 13px; color: #7f5c5c;" href="tel:"><span id="officeNo">+1 (555) 123-4567</span></a></p>
-                <p class="td2p" id="td2pLast" style=""><a style="font-size: 13px; color: #7f5c5c;" href="" target="_blank"><span id="webUrl">www.xyzcorp.com</span></a></p>
+                <p class="td2p" style=""><a id="emailAnc" href="mailto:" style="color: #7f5c5c; text-decoration: none; font-size: 13px;"><span id="email">markmsn@gmail.com</span></a></p>
+                <p class="td2p" style="font-size: 13px; color: #7f5c5c;"><a id="mobNoAnc" style="font-size: 13px; color: #7f5c5c;" href="tel:"><span id="mobileNo">+1 (555) 987-6543</span></a></p>
+                <p class="td2p" style="font-size: 13px; color: #7f5c5c; margin-bottom: 4px;"><a id="offNoAnc" style="font-size: 13px; color: #7f5c5c;" href="tel:"><span id="officeNo">+1 (555) 123-4567</span></a></p>
+                <p class="td2p" id="td2pLast" style=""><a id="webUrlAnc" style="font-size: 13px; color: #7f5c5c;" href="" target="_blank"><span id="webUrl">www.xyzcorp.com</span></a></p>
             </td>
             <td id="mid" class="backgroundColor"  style="background-color:#f5f4f4; width: 100px;">
                 <div style="display: flex; flex-direction: column; padding: 10px; gap: 10px;">

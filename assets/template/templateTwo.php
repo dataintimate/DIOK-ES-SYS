@@ -188,10 +188,10 @@
                 <div class="userDetails" style="">
                     <p class="" style="font-size: 13px; color: #ffffff;"><span id="companyName">XYZ Corporation</span></p>
                     <p class=""  style="font-size: 13px; color: #ffffff; "><span id="address">123 Main Street, Suite 456, Cityville</span></p>
-                    <p class="" style="font-size: 13px; color: #7f5c5c;"><a style="font-size: 13px; color: #ffffff;" href="tel:"><span id="mobileNo">+1 (555) 987-6543</span></a></p>
-                    <p class="" style="font-size: 8px; "><a style="font-size: 13px; color: #ffffff;" href="tel:"><span id="officeNo">+1 (555) 123-4567</span></a></p>
-                    <p class="" style=""><a href="mailto:" style="color: #ffffff; text-decoration: none; font-size: 13px;"><span id="email">markmsn@gmail.com</span></a></p>
-                    <p class="udLast" id="udLast" style="udLast"><a style="font-size: 13px; color: #ffffff;" href="" target="_blank"><span id="webUrl">www.xyzcorp.com</span></a></p>
+                    <p class="" style="font-size: 13px; color: #7f5c5c;"><a id="mobNoAnc" style="font-size: 13px; color: #ffffff;" href="tel:"><span id="mobileNo">+1 (555) 987-6543</span></a></p>
+                    <p class="" style="font-size: 8px; "><a id="offNoAnc" style="font-size: 13px; color: #ffffff;" href="tel:"><span id="officeNo">+1 (555) 123-4567</span></a></p>
+                    <p class="" style=""><a id="emailAnc" href="mailto:" style="color: #ffffff; text-decoration: none; font-size: 13px;"><span id="email">markmsn@gmail.com</span></a></p>
+                    <p class="udLast" id="udLast" style="udLast"><a id="webUrlAnc" style="font-size: 13px; color: #ffffff;" href="" target="_blank"><span id="webUrl">www.xyzcorp.com</span></a></p>
                 </div>
             </td>
         </tr>

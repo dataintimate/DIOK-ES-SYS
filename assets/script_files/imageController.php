@@ -65,7 +65,10 @@
         localStorage.setItem('textColor', $("#inpTextColorPick").val());
         $("#name,#title,#companyName,#email,#address,#mobileNo,#officeNo,#webUrl").css({
             'color':   $("#inpTextColorPick").val()
-        })
+        });
+        $(".line").css({
+            'background-color':   $("#inpTextColorPick").val()
+        });
 
     })
 
