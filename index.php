@@ -28,6 +28,7 @@
     <script src="https://unpkg.com/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://unpkg.com/tippy.js@6.3.4/dist/tippy-bundle.umd.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <style>
         * {
@@ -1012,6 +1013,26 @@
             }
         }
 
+
+        /*alert*/
+
+        /*.alert-box {*/
+        /*    display: none;*/
+        /*    position: fixed;*/
+        /*    top: 10px;*/
+        /*    left: 50%;*/
+        /*    transform: translateX(-50%);*/
+        /*    background-color: #1F365C; !* Green color *!*/
+        /*    color: #fff; !* White text *!*/
+        /*    padding: 10px;*/
+        /*    border-radius: 5px;*/
+        /*    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+        /*    text-align: center;*/
+        /*}*/
+
+
+
+        /*//*/
     </style>
 </head>
 <body>
@@ -1225,6 +1246,7 @@
         <div class="col text-center" id="secondCol">
             <section id="templateSection" class="mx-auto  skelton skeleton-loader"></section>
             <button form="userDataForm" id="btnCopy" type="submit" class="btn" >Copy Signature</button>
+
             <button form="userDataForm" id="btnSave" type="submit" class="btn d-none" disabled>Save Signature</button>
             <button id="btnUpdate" type="submit" class="btn" disabled>Update</button>
             <button id="btnDelete" type="button" class="btn">Delete</button>
@@ -1289,6 +1311,28 @@
 <!--tooltip library Initialize-->
 <script>
     tippy('[data-tippy-content]');
+
+</script>
+
+<script>
+    var copyButton = document.getElementById('btnCopy');
+
+    copyButton.addEventListener('click', function() {
+        Swal.fire(
+            'Template Saved..!',
+            'Template  has been Copied sucessfully..!',
+            'success'
+        )
+
+        // Hide alert box after 2 seconds (adjust as needed)
+        // setTimeout(function() {
+        //
+        // }, 10000);
+    });
+
+
+
+
 
 </script>
 
