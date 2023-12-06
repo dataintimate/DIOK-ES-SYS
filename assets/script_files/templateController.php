@@ -609,15 +609,28 @@ $conn->close();
         function () {
             if (($("#Name").val() === "")) {
 
-                $('#nameValidLbl').css("display", "block");
+                Swal.fire({
+                    title: 'Name is a required field..!',
+                    icon: 'warning',
+                    showCancelButton: false,  // This will hide the "Cancel" button
+                    showConfirmButton: false,  // This will hide the "OK" button
+                    timer: 2000,
+                    iconColor: 'red',
+                    customClass: {
+                        title: 'custom-title-color', // Define a custom class for the title
+                    }
+                });
+
+
+                // $('#nameValidLbl').css("display", "block");
             }else{
                 // alert
                 Swal.fire({
-                    title: 'Template Saved..!',
+                    title: 'Template Copied..!',
                     icon: 'success',
                     showCancelButton: false,  // This will hide the "Cancel" button
                     showConfirmButton: false,  // This will hide the "OK" button
-                    timer: 1000,
+                    timer: 2000,
                     iconColor: '#4CAF50',
                     customClass: {
                         title: 'custom-title-color', // Define a custom class for the title
