@@ -618,7 +618,7 @@ $conn->close();
                     showCancelButton: false,  // This will hide the "Cancel" button
                     showConfirmButton: false,  // This will hide the "OK" button
                     timer: 1000,
-                    // iconColor: '#1F365C',
+                    iconColor: '#4CAF50',
                     customClass: {
                         title: 'custom-title-color', // Define a custom class for the title
                     }
