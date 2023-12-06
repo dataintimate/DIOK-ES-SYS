@@ -11,8 +11,21 @@
         if (file) {
             // Check the file size (in bytes)
             if (file.size <= 2 * 1024 * 1024) { // 2MB limit
+                // alert
+                Swal.fire({
+                    title: 'File has been uploaded successfully..!',
+                    icon: 'success',
+                    showCancelButton: false,  // This will hide the "Cancel" button
+                    showConfirmButton: false,  // This will hide the "OK" button
+                    timer: 1000,
+                    // iconColor: '#1F365C',
+                    customClass: {
+                        title: 'custom-title-color', // Define a custom class for the title
+                    }
+                });
+
                 var fileName = file.name;
-                alert("Selected file: " + fileName);
+                // alert("Selected file: " + fileName);
                  var tempFIle = fileName;
                 localStorage.setItem("image-file", fileName);
                 var reader = new FileReader();
@@ -106,9 +119,21 @@
     $("#removeBtn").click(function (){
         $("#selected-image").css({
             'background': 'white'
+
         });
         $("#file-input").val('');
         localStorage.setItem('recent-image',  "");
+        Swal.fire({
+            title: 'File has beem removed successfully..!',
+            icon: 'success',
+            showCancelButton: false,  // This will hide the "Cancel" button
+            showConfirmButton: false,  // This will hide the "OK" button
+            timer: 1000,
+            // iconColor: '#1F365C',
+            customClass: {
+                title: 'custom-title-color', // Define a custom class for the title
+            }
+        });
     });
 
     const range = $("#inpFontSize");
