@@ -611,6 +611,19 @@ $conn->close();
 
                 $('#nameValidLbl').css("display", "block");
             }else{
+                // alert
+                Swal.fire({
+                    title: 'Template Saved..!',
+                    icon: 'success',
+                    showCancelButton: false,  // This will hide the "Cancel" button
+                    showConfirmButton: false,  // This will hide the "OK" button
+                    timer: 1000,
+                    iconColor: '#1F365C',
+                    customClass: {
+                        title: 'custom-title-color', // Define a custom class for the title
+                    }
+                });
+
                 $('#nameValidLbl').css("display", "none");
                 copyDivToClipboard();
                 $('#btnCopy').text("Copied");
@@ -619,6 +632,9 @@ $conn->close();
                     $('#btnCopy').text("Copy Signature");
                     $('#btnCopy').css("background-color", "#1F365C");
                 }, 2000);
+
+
+
             }
         }
     );
