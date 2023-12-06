@@ -7,6 +7,11 @@
             width: 675px !important;
             height: 300px !important;
         }
+        /*#selected-image{*/
+        /*    width: 100px !important;*/
+        /*    height: 100px !important;*/
+        /*    background : url('assets/images/user8-128x128.jpg') center/cover no-repeat;*/
+        /*}*/
         .td1{
             width: 110px;
         }
@@ -27,10 +32,11 @@
             margin-bottom: 10px;
         }
         #selected-image{
-            width: 80px !important;
-            height: 80px !important;
+            width: 100px !important;
+            height: 100px !important;
             margin-right: 0px;
-            margin-left: 30px;
+            margin-left: 50px;
+            background : url('assets/images/user10.jpg') center/cover no-repeat ;
         }
         #email{
             margin-top: 10px;
@@ -192,27 +198,36 @@
 </head>
 <body>
 <div >
-    <table class="example backgroundColor templateThree" style="color: rgb(0, 0, 0); font-family: Arial, serif; background-color: #C4C4C4; ">
-        <tr style="border-bottom: 1px solid white">
+    <table class="example backgroundColor templateThree" style="color: rgb(0, 0, 0); font-family: Arial, serif; background-color:#808278; ">
+        <tr style="">
             <td class="td1" style="">
                         <span id="selected-image" style="display: block; border-radius: 50%; background-color: white;">
 
                         </span>
             </td>
-            <td class="td2" style="padding: 10px 10px">
-                <p class="td2p" style="font-size: 14px; font-weight: bold; color: black"><span id="name">Mark Mason</span></p>
-                <p class="td2p" style="font-size: 14px; color: black"><span id="title">Marketing Manager</span></p>
-                <p class="td2p" style="font-size: 14px; color: black"><span id="companyName">XYZ Corporation</span></p>
+            <td class="td2" style="padding: 10px 10px; ">
+                <p class="td2p" style="font-size: 13px; font-weight: bold; color: #ffffff"><span id="name">Mark Mason</span></p>
+                <p class="td2p" style="font-size: 13px; color: #ffffff"><span id="title">Marketing Manager</span></p>
+                <p class="td2p" style="font-size: 13px; color:#ffffff"><span id="companyName">XYZ Corporation</span></p>
             </td>
-            <td class="td3" style="border-left: 1px solid white; padding: 10px">
-                <p class="td3p" style="font-size: 14px; color: black"><a href="mailto:youremail@example.com" style="color: #000000; text-decoration: none;"><span id="email">markmsn@gmail.com</span></a></p>
-                <p class="td3p" style="font-size: 14px; color: black"><span id="mobileNo">+1 (555) 987-6543</span></p>
-                <p class="td3p" style="font-size: 14px; color: black"><span id="officeNo">+1 (555) 123-4567</span></p>
-                <p class="td3p" style="font-size: 14px; color: black"><span id="webUrl">www.xyzcorp.com</span></p>
-                <p class="td3p" style="font-size: 14px; color: black"><span id="address">123 Main Street, Suite 456, Cityville</span></p>
+            <td class="line" style="min-width: 1px; background-color: white; opacity: 20%; ">
+            </td>
+            <td class="td3" style=" padding: 10px">
+                <p class="td3p" style="color: #ffffff"><a href="mailto:" style="color: #ffffff; text-decoration: none; font-size: 13px;"><span id="email">markmsn@gmail.com</span></a></p>
+                <p class="td3p" style=""><a href="tel:" style="font-size: 13px; color: #ffffff;"><span id="mobileNo">+1 (555) 987-6543</span></a></p>
+                <p class="td3p" style=""><a href="tel:" style="font-size: 13px; color: #ffffff;"><span id="officeNo">+1 (555) 123-4567</span></a></p>
+                <p class="td3p" style="font-size: 13px; color: #ffffff"><span id="address">123 Main Street, Suite 456, Cityville</span></p>
+                <p class="td3p" style=""><a href="" style="font-size: 13px; color: #ffffff;"><span id="webUrl">www.xyzcorp.com</span></a></p>
             </td>
         </tr>
+        <tr>
+            <td class="line" style="background-color: white; min-height: 1px; opacity: 20%;"></td>
+            <td class="line" style="background-color: white; min-height: 1px; opacity: 20%;"></td>
+            <td class="line" style="background-color: white; min-height: 1px; opacity: 20%;"></td>
+            <td class="line" style="background-color: white; min-height: 1px; opacity: 20%;"></td>
+        </tr>
         <tr style="">
+            <td></td>
             <td class="td4" colspan="3" style=" ">
                 <p class="td4p" id="s_mid_icons" style="display: flex; flex-direction: row; width: max-content; float: right">
                     <a id="linked" href="" style=" margin-right: 7px; font-size: 0px; ">
@@ -224,7 +239,7 @@
                     <a id="twi" href="" style=" margin-right: 7px; font-size: 0px;">
                         <img id="imgTwitter" width="30" height="30" src="https://img.icons8.com/ios-filled/30/FFFFFF/twitterx--v1.png" alt="twitterx--v1"/>
                     </a>
-                    <a id="insta" href="" style=" font-size: 0px; margin-right: 7px">
+                    <a id="insta" href="" style=" font-size: 0px; margin-right: 15px">
                         <img id="imgInsta" width="30" height="30" src="https://img.icons8.com/ios-filled/30/FFFFFF/instagram-new--v1.png" alt="instagram-new--v1"/>
                     </a>
                 </p>
