@@ -28,7 +28,6 @@
     <script src="https://unpkg.com/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://unpkg.com/tippy.js@6.3.4/dist/tippy-bundle.umd.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <style>
         * {
@@ -364,6 +363,7 @@
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
+            margin-top: 20px;
         }
 
         #thirdTemp {
@@ -371,6 +371,7 @@
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
+            margin-top: 20px;
         }
 
         #fourthTemp {
@@ -378,6 +379,7 @@
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
+            margin-top: 20px;
         }
 
         #fifthTemp {
@@ -385,6 +387,7 @@
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
+            margin-top: 20px;
         }
 
         .clear:hover {
@@ -422,6 +425,7 @@
             white-space: nowrap;
         }
 
+
         @media all and (max-width: 1200px) {
             #templateSection {
                 width: 700px;
@@ -456,6 +460,12 @@
 
             #secondCol::-webkit-scrollbar {
                 width: 5px;
+            }
+            .label1{
+                font-size: 14px;
+            }
+            #fifthTemp,#thirdTemp,#fourthTemp{
+                margin-top: 40px !important;
             }
         }
 
@@ -681,6 +691,13 @@
             ::-webkit-scrollbar {
                 width: 0px;
             }
+            .label1{
+                font-size: 12px !important;
+                top: 112px !important;
+            }
+            #fifthTemp,#thirdTemp,#fourthTemp{
+                margin-top: 45px !important;
+            }
         }
 
         @media all and (max-width: 576px) {
@@ -768,6 +785,17 @@
                 cursor: pointer;
                 border-radius: 0;
             }
+            .label1{
+                font-size: 13px !important;
+                top: 150px !important;
+                left: 0 !important;
+            }
+            #secondTemp,#thirdTemp,#fourthTemp,#fifthTemp{
+                margin-top: 50px !important;
+            }
+            #fifthTemp,#thirdTemp,#fourthTemp,#firstTemp,#secondTemp{
+                text-align: center !important;
+            }
         }
 
         @media all and (max-width: 450px) {
@@ -834,6 +862,18 @@
                 padding: 8px 12px;
                 cursor: pointer;
                 border-radius: 0;
+            }
+
+            .label1{
+                font-size: 13px !important;
+                top: 125px !important;
+                left: 0 !important;
+            }
+            #secondTemp,#thirdTemp,#fourthTemp,#fifthTemp{
+                margin-top: 50px !important;
+            }
+            #fifthTemp,#thirdTemp,#fourthTemp,#firstTemp,#secondTemp{
+                text-align: center !important;
             }
         }
 
@@ -914,17 +954,24 @@
                 cursor: pointer;
                 border-radius: 0;
             }
+            .label1{
+                font-size: 11px !important;
+                top: 100px !important;
+                left: 0 !important;
+            }
+            #secondTemp,#thirdTemp,#fourthTemp,#fifthTemp{
+                margin-top: 50px !important;
+            }
+            #fifthTemp,#thirdTemp,#fourthTemp,#firstTemp,#secondTemp{
+                text-align: center !important;
+            }
         }
+
         .skelton {
-            /*width: 270px;*/
-            /*height: 135px;*/
-            /*!*box-shadow: 0 -1px 8px 2px rgba(0, 0, 0, 0.14);*!*/
-            /*margin-bottom: 45px;*/
             position: relative;
 
         }
         .skelton::before{
-
             content: '';
             position: absolute;
             top: 0;
@@ -933,11 +980,9 @@
             height: 100%;
             z-index: 2;
             background-size: 200%;
-
             background: linear-gradient(90deg, #e7e6e6, #f9f9f9, #e7e6e6);
             animation: skeleton 5s infinite reverse;
         }
-
 
         .skelton:first-of-type {
             margin-top: 35px;
@@ -985,7 +1030,11 @@
         .label1{
             position: relative;
             top: 137px;
-            left: 79px;
+            font-size: 14px;
+            color: #1f365c !important;
+        }
+        #fifthTemp,#thirdTemp,#fourthTemp,#firstTemp,#secondTemp{
+            text-align: center !important;
         }
         /* CSS for Paragraph Skeleton Loader */
         .skeleton-paragraph{
@@ -993,7 +1042,6 @@
         }
         .skeleton-paragraph::before {
             content: '';
-
             position: absolute;
             /* right: 13px; */
             z-index: 2;
@@ -1005,8 +1053,22 @@
             background-size: 200%;
             animation: loading 1.5s infinite ease-in-out;
         }
-
-
+        .skeleton-btn{
+            position: relative;
+        }
+        .skeleton-btn::before {
+            content: '';
+            position: absolute;
+            /* right: 13px; */
+            z-index: 2;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+            background-size: 200%;
+            animation: loading 1.5s infinite ease-in-out;
+        }
         @keyframes loading {
             to {
                 background-position: -200% 0;
@@ -1014,25 +1076,6 @@
         }
 
 
-        /*alert*/
-
-        /*.alert-box {*/
-        /*    display: none;*/
-        /*    position: fixed;*/
-        /*    top: 10px;*/
-        /*    left: 50%;*/
-        /*    transform: translateX(-50%);*/
-        /*    background-color: #1F365C; !* Green color *!*/
-        /*    color: #fff; !* White text *!*/
-        /*    padding: 10px;*/
-        /*    border-radius: 5px;*/
-        /*    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
-        /*    text-align: center;*/
-        /*}*/
-
-
-
-        /*//*/
     </style>
 </head>
 <body>
@@ -1057,9 +1100,8 @@
                         <div id="firstTemp" class="smTemp skelton">
                             <label class="skeleton-paragraph label1">Template 01</label>
                         </div>
-
                         <div id="secondTemp" class="smTemp skelton ">
-                            <label class="skeleton-paragraph label1">Template 02</label>
+                            <label class="skeleton-paragraph label1" style="margin-top: 10px">Template 02</label>
                         </div>
                         <div id="thirdTemp" class="smTemp skelton ">
                             <label class="skeleton-paragraph label1">Template 03</label>
@@ -1074,8 +1116,10 @@
                     <div id="cardBodyInput" class="card-body px-5">
                         <div class="row">
                             <div class="col-md-6 col-lg-12 mb-3 mt-2 mt-xl-4">
-                                <label for="Name" class="form-label">Name</label>
+                                <label for="Name" class="form-label">Name <span style="color: red"> *</span></label>
                                 <input type="text" name="Name" class="form-control" id="Name">
+                                <p id="nameValidLbl" style="color: red; font-size: 12px; margin: 0; margin-top: 5px; display: none; ">
+                                   name is required</p>
                             </div>
                             <div class="col-md-6 col-lg-12 mb-3 mt-2">
                                 <label for="title" class="form-label">Title</label>
@@ -1245,17 +1289,16 @@
         </div>
         <div class="col text-center" id="secondCol">
             <section id="templateSection" class="mx-auto  skelton skeleton-loader"></section>
-            <button form="userDataForm" id="btnCopy" type="submit" class="btn" >Copy Signature</button>
-
+            <button form="" id="btnCopy" type="submit" class="btn skeleton-btn" >Copy Signature</button>
             <button form="userDataForm" id="btnSave" type="submit" class="btn d-none" disabled>Save Signature</button>
             <button id="btnUpdate" type="submit" class="btn" disabled>Update</button>
             <button id="btnDelete" type="button" class="btn">Delete</button>
             <br>
-            <a class="clear" href="#"><i id="txtClearAllIcn" class="fa-solid fa-xmark fa-l p-1 mt-3"></i>
-                <p id="txtClearAll">Clear Input Fields</p></a><br>
+            <a class="clear" href="#"><i id="txtClearAllIcn" class="fa-solid fa-xmark fa-l p-1 mt-3 skeleton-btn"></i>
+                <p id="txtClearAll" class="skeleton-btn">Clear Input Fields</p></a><br>
             <a class="d-none" href="#"><p id="txtSavedSignatures">Saved Signatures</p></a>
             <a class="d-none" href="#"><p id="txtNewSignature">New Signature</p></a>
-            <div id="instructionsDiv"><p>Instructions</p></div>
+            <div id="instructionsDiv" class="skeleton-btn"><p>Instructions</p></div>
             <div id="docDiv">
                 <i class="fa-regular fa-circle-xmark"></i>
                 <h5>Instructions</h5>
@@ -1311,28 +1354,6 @@
 <!--tooltip library Initialize-->
 <script>
     tippy('[data-tippy-content]');
-
-</script>
-
-<script>
-    var copyButton = document.getElementById('btnCopy');
-
-    copyButton.addEventListener('click', function() {
-        Swal.fire(
-            'Template Saved..!',
-            'Template  has been Copied sucessfully..!',
-            'success'
-        )
-
-        // Hide alert box after 2 seconds (adjust as needed)
-        // setTimeout(function() {
-        //
-        // }, 10000);
-    });
-
-
-
-
 
 </script>
 
