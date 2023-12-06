@@ -352,35 +352,35 @@
         }
 
         #firstTemp {
-            background: url("assets/templateImages/temp1.jpg");
+            background: url("assets/templateImages/11111.jpg");
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
         }
 
         #secondTemp {
-            background: url("assets/templateImages/temp2.jpg");
+            background: url("assets/templateImages/22222.jpg");
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
         }
 
         #thirdTemp {
-            background: url("assets/templateImages/temp3.jpg");
+            background: url("assets/templateImages/33333.jpg");
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
         }
 
         #fourthTemp {
-            background: url("assets/templateImages/temp4.jpg");
+            background: url("assets/templateImages/44444.jpg");
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
         }
 
         #fifthTemp {
-            background: url("assets/templateImages/temp5.jpg");
+            background: url("assets/templateImages/55555.jpg");
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
