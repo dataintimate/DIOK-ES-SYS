@@ -1085,6 +1085,12 @@
             color: #1F365C;
         }
 
+        #docDiv i{
+            margin-left: 8px !important;
+            margin-right: 8px !important;
+            font-size: 18px !important;
+        }
+
 
     </style>
 </head>
@@ -1334,11 +1340,7 @@
                             class="fa-solid fa-image header-icon" id="icnImage" data-tippy-content="Image"></i>
                     to add an image to the signature. Here you can
                     add an image of your preference under some guidelines.</p>
-                <p style="margin-bottom: 50px; margin-top: 40px; font-weight: normal"><strong>Congrats! <img width="30"
-                                                                                                             height="30"
-                                                                                                             src="https://img.icons8.com/ios-glyphs/30/FFFFFF/confetti--v1.png"
-                                                                                                             alt="confetti--v1"
-                                                                                                             style="margin-right: 10px; margin-left: 10px"/>
+                <p style="margin-bottom: 50px; margin-top: 40px; font-weight: normal"><strong>Congrats!
                         You are done creating your signature.</strong></p><br>
 
                 <h5>How to Store the Signature ?</h5>
