@@ -1011,8 +1011,15 @@ $conn->close();
     //skeleton loader
     const allSkeleton = document.querySelectorAll('.skelton')
     const nodeListOf = document.querySelectorAll('label');
+    const btn = document.querySelector('#btnCopy');
+    const clear = document.querySelector('#txtClearAll');
+    const clearAll = document.querySelector('#txtClearAllIcn');
     window.addEventListener('load', function() {
         $('#templateSection').removeClass('skeleton-loader');
+        $('#btnCopy').removeClass("skeleton-btn");
+        $('#txtClearAll').removeClass("skeleton-btn");
+        $('#txtClearAllIcn').removeClass("skeleton-btn");
+        $('#instructionsDiv').removeClass("skeleton-btn");
 
 
 
@@ -1024,6 +1031,9 @@ $conn->close();
         nodeListOf.forEach(item1=>{
             item1.classList.remove('skeleton-paragraph')
         })
+
+        // btn.removeClass('skeleton-btn');
+        // clear.removeClass('skeleton-btn');
     })
 
 

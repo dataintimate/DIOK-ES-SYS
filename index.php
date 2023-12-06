@@ -1053,12 +1053,28 @@
             background-size: 200%;
             animation: loading 1.5s infinite ease-in-out;
         }
-
+        .skeleton-btn{
+            position: relative;
+        }
+        .skeleton-btn::before {
+            content: '';
+            position: absolute;
+            /* right: 13px; */
+            z-index: 2;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+            background-size: 200%;
+            animation: loading 1.5s infinite ease-in-out;
+        }
         @keyframes loading {
             to {
                 background-position: -200% 0;
             }
         }
+
 
     </style>
 </head>
@@ -1271,16 +1287,16 @@
         </div>
         <div class="col text-center" id="secondCol">
             <section id="templateSection" class="mx-auto  skelton skeleton-loader"></section>
-            <button form="userDataForm" id="btnCopy" type="submit" class="btn" >Copy Signature</button>
+            <button form="userDataForm" id="btnCopy" type="submit" class="btn skeleton-btn" >Copy Signature</button>
             <button form="userDataForm" id="btnSave" type="submit" class="btn d-none" disabled>Save Signature</button>
             <button id="btnUpdate" type="submit" class="btn" disabled>Update</button>
             <button id="btnDelete" type="button" class="btn">Delete</button>
             <br>
-            <a class="clear" href="#"><i id="txtClearAllIcn" class="fa-solid fa-xmark fa-l p-1 mt-3"></i>
-                <p id="txtClearAll">Clear Input Fields</p></a><br>
+            <a class="clear" href="#"><i id="txtClearAllIcn" class="fa-solid fa-xmark fa-l p-1 mt-3 skeleton-btn"></i>
+                <p id="txtClearAll" class="skeleton-btn">Clear Input Fields</p></a><br>
             <a class="d-none" href="#"><p id="txtSavedSignatures">Saved Signatures</p></a>
             <a class="d-none" href="#"><p id="txtNewSignature">New Signature</p></a>
-            <div id="instructionsDiv"><p>Instructions</p></div>
+            <div id="instructionsDiv" class="skeleton-btn"><p>Instructions</p></div>
             <div id="docDiv">
                 <i class="fa-regular fa-circle-xmark"></i>
                 <h5>Instructions</h5>
