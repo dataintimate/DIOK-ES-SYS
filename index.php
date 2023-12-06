@@ -363,6 +363,7 @@
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
+            margin-top: 20px;
         }
 
         #thirdTemp {
@@ -370,6 +371,7 @@
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
+            margin-top: 20px;
         }
 
         #fourthTemp {
@@ -377,6 +379,7 @@
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
+            margin-top: 20px;
         }
 
         #fifthTemp {
@@ -384,6 +387,7 @@
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
+            margin-top: 20px;
         }
 
         .clear:hover {
@@ -421,6 +425,7 @@
             white-space: nowrap;
         }
 
+
         @media all and (max-width: 1200px) {
             #templateSection {
                 width: 700px;
@@ -455,6 +460,12 @@
 
             #secondCol::-webkit-scrollbar {
                 width: 5px;
+            }
+            .label1{
+                font-size: 14px;
+            }
+            #fifthTemp,#thirdTemp,#fourthTemp{
+                margin-top: 40px !important;
             }
         }
 
@@ -680,6 +691,13 @@
             ::-webkit-scrollbar {
                 width: 0px;
             }
+            .label1{
+                font-size: 12px !important;
+                top: 112px !important;
+            }
+            #fifthTemp,#thirdTemp,#fourthTemp{
+                margin-top: 45px !important;
+            }
         }
 
         @media all and (max-width: 576px) {
@@ -767,6 +785,17 @@
                 cursor: pointer;
                 border-radius: 0;
             }
+            .label1{
+                font-size: 13px !important;
+                top: 150px !important;
+                left: 0 !important;
+            }
+            #secondTemp,#thirdTemp,#fourthTemp,#fifthTemp{
+                margin-top: 50px !important;
+            }
+            #fifthTemp,#thirdTemp,#fourthTemp,#firstTemp,#secondTemp{
+                text-align: center !important;
+            }
         }
 
         @media all and (max-width: 450px) {
@@ -833,6 +862,18 @@
                 padding: 8px 12px;
                 cursor: pointer;
                 border-radius: 0;
+            }
+
+            .label1{
+                font-size: 13px !important;
+                top: 125px !important;
+                left: 0 !important;
+            }
+            #secondTemp,#thirdTemp,#fourthTemp,#fifthTemp{
+                margin-top: 50px !important;
+            }
+            #fifthTemp,#thirdTemp,#fourthTemp,#firstTemp,#secondTemp{
+                text-align: center !important;
             }
         }
 
@@ -913,17 +954,24 @@
                 cursor: pointer;
                 border-radius: 0;
             }
+            .label1{
+                font-size: 11px !important;
+                top: 100px !important;
+                left: 0 !important;
+            }
+            #secondTemp,#thirdTemp,#fourthTemp,#fifthTemp{
+                margin-top: 50px !important;
+            }
+            #fifthTemp,#thirdTemp,#fourthTemp,#firstTemp,#secondTemp{
+                text-align: center !important;
+            }
         }
+
         .skelton {
-            /*width: 270px;*/
-            /*height: 135px;*/
-            /*!*box-shadow: 0 -1px 8px 2px rgba(0, 0, 0, 0.14);*!*/
-            /*margin-bottom: 45px;*/
             position: relative;
 
         }
         .skelton::before{
-
             content: '';
             position: absolute;
             top: 0;
@@ -932,11 +980,9 @@
             height: 100%;
             z-index: 2;
             background-size: 200%;
-
             background: linear-gradient(90deg, #e7e6e6, #f9f9f9, #e7e6e6);
             animation: skeleton 5s infinite reverse;
         }
-
 
         .skelton:first-of-type {
             margin-top: 35px;
@@ -984,7 +1030,11 @@
         .label1{
             position: relative;
             top: 137px;
-            left: 79px;
+            font-size: 14px;
+            color: #1f365c !important;
+        }
+        #fifthTemp,#thirdTemp,#fourthTemp,#firstTemp,#secondTemp{
+            text-align: center !important;
         }
         /* CSS for Paragraph Skeleton Loader */
         .skeleton-paragraph{
@@ -992,7 +1042,6 @@
         }
         .skeleton-paragraph::before {
             content: '';
-
             position: absolute;
             /* right: 13px; */
             z-index: 2;
@@ -1004,7 +1053,6 @@
             background-size: 200%;
             animation: loading 1.5s infinite ease-in-out;
         }
-
 
         @keyframes loading {
             to {
@@ -1036,9 +1084,8 @@
                         <div id="firstTemp" class="smTemp skelton">
                             <label class="skeleton-paragraph label1">Template 01</label>
                         </div>
-
                         <div id="secondTemp" class="smTemp skelton ">
-                            <label class="skeleton-paragraph label1">Template 02</label>
+                            <label class="skeleton-paragraph label1" style="margin-top: 10px">Template 02</label>
                         </div>
                         <div id="thirdTemp" class="smTemp skelton ">
                             <label class="skeleton-paragraph label1">Template 03</label>
