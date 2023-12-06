@@ -13,7 +13,7 @@
         #selected-image{
             width: 100px !important;
             height: 100px !important;
-            background : url('https://i.postimg.cc/PrQkhXfM/user4.jpg') center/cover no-repeat !important;
+            background : url('assets/images/user13.jpg') center/cover no-repeat !important;
         }
         .td2p{
             margin-bottom: 10px;
