@@ -1116,8 +1116,10 @@
                     <div id="cardBodyInput" class="card-body px-5">
                         <div class="row">
                             <div class="col-md-6 col-lg-12 mb-3 mt-2 mt-xl-4">
-                                <label for="Name" class="form-label">Name</label>
+                                <label for="Name" class="form-label">Name <span style="color: red"> *</span></label>
                                 <input type="text" name="Name" class="form-control" id="Name">
+                                <p id="nameValidLbl" style="color: red; font-size: 12px; margin: 0; margin-top: 5px; display: none; ">
+                                   name is required</p>
                             </div>
                             <div class="col-md-6 col-lg-12 mb-3 mt-2">
                                 <label for="title" class="form-label">Title</label>
@@ -1287,7 +1289,7 @@
         </div>
         <div class="col text-center" id="secondCol">
             <section id="templateSection" class="mx-auto  skelton skeleton-loader"></section>
-            <button form="userDataForm" id="btnCopy" type="submit" class="btn skeleton-btn" >Copy Signature</button>
+            <button form="" id="btnCopy" type="submit" class="btn skeleton-btn" >Copy Signature</button>
             <button form="userDataForm" id="btnSave" type="submit" class="btn d-none" disabled>Save Signature</button>
             <button id="btnUpdate" type="submit" class="btn" disabled>Update</button>
             <button id="btnDelete" type="button" class="btn">Delete</button>

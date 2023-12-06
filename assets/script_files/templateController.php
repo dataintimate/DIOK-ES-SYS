@@ -583,7 +583,7 @@ $conn->close();
         $('#insta').attr('href', instagram);
 
         if (
-            ($("#Name").val() == "") ||
+            // ($("#Name").val() == "") ||
             ($("#OfficeNo").val() !== "" && $("#OfficeNo").val().length < 5 || $("#offNoValidLbl").css("display") === "block") ||
             ($("#mobileBo").val() !== "" && $("#mobileBo").val().length < 5 || $("#mobNoValidLbl").css("display") === "block") ||
             ($("#url").val() !== "" && $("#webValidLbl").css("display") === "block") ||
@@ -607,13 +607,19 @@ $conn->close();
 
     $('#btnCopy').click(
         function () {
-            copyDivToClipboard();
-            $('#btnCopy').text("Copied");
-            $('#btnCopy').css("background-color", "#5891e8");
-            setTimeout(function () {
-                $('#btnCopy').text("Copy Signature");
-                $('#btnCopy').css("background-color", "#1F365C");
-            }, 2000);
+            if (($("#Name").val() === "")) {
+
+                $('#nameValidLbl').css("display", "block");
+            }else{
+                $('#nameValidLbl').css("display", "none");
+                copyDivToClipboard();
+                $('#btnCopy').text("Copied");
+                $('#btnCopy').css("background-color", "#5891e8");
+                setTimeout(function () {
+                    $('#btnCopy').text("Copy Signature");
+                    $('#btnCopy').css("background-color", "#1F365C");
+                }, 2000);
+            }
         }
     );
 
