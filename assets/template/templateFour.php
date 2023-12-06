@@ -161,24 +161,24 @@
     <table class="example" cellspacing="0" cellpadding="0" width="675px"
            style="font-family: Arial, sans-serif; border-collapse: collapse; border-radius: 10px;">
         <tr>
-            <td style="background-color: #1F365C"  >
+            <td class="backgroundColor2" style="background-color: #1F365C"  >
                 <p style="display:grid; margin: 0 0 0 2px; ">
                     <a id="linked" href="" style=" margin-top: 7px; font-size: 0px; ">
-                        <img  id="imgLinkedIn" width="25" height="25" src="https://img.icons8.com/ios-filled/30/FFFFFF/linkedin.png" alt="linkedin"/>
+                        <img  id="imgLinkedIn" width="20" height="20" src="https://img.icons8.com/ios-filled/30/FFFFFF/linkedin.png" alt="linkedin"/>
                     </a>
                     <a id="fbook" href="" style=" margin-top: 7px; font-size: 0px; ">
-                        <img id="imgFBook" width="25" height="25" src="https://img.icons8.com/ios-filled/30/FFFFFF/facebook--v1.png" alt="facebook--v1"/>
+                        <img id="imgFBook" width="20" height="20" src="https://img.icons8.com/ios-filled/30/FFFFFF/facebook--v1.png" alt="facebook--v1"/>
                     </a>
                     <a id="twi" href="" style=" margin-top: 7px; font-size: 0px;">
-                        <img id="imgTwitter" width="25" height="25" src="https://img.icons8.com/ios-filled/30/FFFFFF/twitterx--v1.png" alt="twitterx--v1"/>
+                        <img id="imgTwitter" width="20" height="20" src="https://img.icons8.com/ios-filled/30/FFFFFF/twitterx--v1.png" alt="twitterx--v1"/>
                     </a>
                     <a id="insta" href="" style=" font-size: 0px; margin-top: 7px">
-                        <img id="imgInsta" width="25" height="25" src="https://img.icons8.com/ios-filled/30/FFFFFF/instagram-new--v1.png" alt="instagram-new--v1"/>
+                        <img id="imgInsta" width="20" height="20" src="https://img.icons8.com/ios-filled/30/FFFFFF/instagram-new--v1.png" alt="instagram-new--v1"/>
                     </a>
                 </p>
             </td>
 
-            <td align="center" class="backgroundColor td1p" id="side" height="250px"  width="150px" style="background-color:  #1F365C; padding: 10px;   ">
+            <td  align="center" class="backgroundColor2 td1p" id="side" height="250px"  width="150px" style="background-color:  #1F365C; padding: 10px;   ">
                <span  id="selected-image" style="display: block; border-radius: 50%; background-color: white;">
                </span>
 
