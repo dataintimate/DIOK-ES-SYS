@@ -450,7 +450,9 @@
                 margin-right: 12px;
                 margin-left: 12px;
             }
-
+#btnCopy{
+    font-size: 14px;
+}
             .card-header {
                 padding-right: 0;
                 padding-left: 0;
@@ -969,6 +971,22 @@
             #fifthTemp,#thirdTemp,#fourthTemp,#firstTemp,#secondTemp{
                 text-align: center !important;
             }
+            .skeleton-btn::before {
+                content: '';
+                position: absolute;
+                /* right: 13px; */
+                z-index: 2;
+                /*top: 0;*/
+                /*left: 0;*/
+                top: -2px;
+                left: -10px;
+                width: 125%;
+                height: 115%;
+                /*border: 2px solid white;*/
+                background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+                background-size: 200%;
+                animation: loading 1.5s infinite ease-in-out;
+            }
         }
 
         .skelton {
@@ -1065,10 +1083,13 @@
             position: absolute;
             /* right: 13px; */
             z-index: 2;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            /*top: 0;*/
+            /*left: 0;*/
+            top: -4px;
+            left: -10px;
+            width: 125%;
+            height: 115%;
+            /*border: 2px solid white;*/
             background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
             background-size: 200%;
             animation: loading 1.5s infinite ease-in-out;
@@ -1305,7 +1326,7 @@
         </div>
         <div class="col text-center" id="secondCol">
             <section id="templateSection" class="mx-auto  skelton skeleton-loader"></section>
-            <button form="" id="btnCopy" type="submit" class="btn skeleton-btn" >Copy Signature</button>
+            <button form="" id="btnCopy" type="submit" class="skeleton-btn btn " >Copy Signature</button>
             <button form="userDataForm" id="btnSave" type="submit" class="btn d-none" disabled>Save Signature</button>
             <button id="btnUpdate" type="submit" class="btn" disabled>Update</button>
             <button id="btnDelete" type="button" class="btn">Delete</button>
