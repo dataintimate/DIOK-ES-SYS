@@ -181,13 +181,13 @@
             display: inline-block;
             padding-right: 4px;
             margin-bottom: 10px;
-            color: red;
-           font-size: 15px;
+            color: #090f1a;
+           font-size: 13px;
         }
 
         #txtClearAllIcn {
-            color: red;
-            font-size: 15px;
+            color: #090f1a;
+            font-size: 13px;
         }
 
         #txtNewSignature {
@@ -1310,8 +1310,8 @@
             <button id="btnUpdate" type="submit" class="btn" disabled>Update</button>
             <button id="btnDelete" type="button" class="btn">Delete</button>
             <br>
-            <a class="clear" href="#"><i id="txtClearAllIcn" class="fa-solid fa-xmark fa-l p-1 mt-3 skeleton-btn"></i>
-                <p id="txtClearAll" class="skeleton-btn">Clear Input Fields</p></a><br>
+            <a class="clear" href="#"><i  id="txtClearAllIcn" class="fa-solid fa-xmark fa-l p-1 mt-3 skeleton-btn"></i>
+                    <p style="font-family: 'Verdana' !important" id="txtClearAll" class="skeleton-btn">Clear Input Fields</p></a><br>
             <a class="d-none" href="#"><p id="txtSavedSignatures">Saved Signatures</p></a>
             <a class="d-none" href="#"><p id="txtNewSignature">New Signature</p></a>
             <div id="instructionsDiv" class="skeleton-btn"><p>Instructions</p></div>
