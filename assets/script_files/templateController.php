@@ -612,17 +612,17 @@ $conn->close();
                 $('#nameValidLbl').css("display", "block");
             }else{
                 // alert
-                Swal.fire({
-                    title: 'Template Saved..!',
-                    icon: 'success',
-                    showCancelButton: false,  // This will hide the "Cancel" button
-                    showConfirmButton: false,  // This will hide the "OK" button
-                    timer: 1000,
-                    iconColor: '#4CAF50',
-                    customClass: {
-                        title: 'custom-title-color', // Define a custom class for the title
-                    }
-                });
+                // Swal.fire({
+                //     title: 'Template Saved..!',
+                //     icon: 'success',
+                //     showCancelButton: false,  // This will hide the "Cancel" button
+                //     showConfirmButton: false,  // This will hide the "OK" button
+                //     timer: 1000,
+                //     iconColor: '#4CAF50',
+                //     customClass: {
+                //         title: 'custom-title-color', // Define a custom class for the title
+                //     }
+                // });
 
                 $('#nameValidLbl').css("display", "none");
                 copyDivToClipboard();
@@ -638,7 +638,18 @@ $conn->close();
                     data: formData,
                     success: function (response) {
                         // Handle the server response here
-                        alert("Data Save successfully!");
+                        // alert("Data Save successfully!");
+                        Swal.fire({
+                            title: 'Template Copy and Saved..!',
+                            icon: 'success',
+                            showCancelButton: false,  // This will hide the "Cancel" button
+                            showConfirmButton: false,  // This will hide the "OK" button
+                            timer: 1000,
+                            iconColor: '#4CAF50',
+                            customClass: {
+                                title: 'custom-title-color', // Define a custom class for the title
+                            }
+                        });
                         // location.reload();
                     },
                     error: function () {
